@@ -18,6 +18,11 @@ plugin.tx_gridelements_pi1.setup.csswrapper {
     }
 }
 
+plugin.tx_gridelements_pi1.setup.row < plugin.tx_gridelements_pi1.setup.csswrapper
+plugin.tx_gridelements_pi1.setup.row {
+    wrap = <div class="row {register: containerClasses}">|</div>
+}
+
 # Rows
 plugin.tx_gridelements_pi1.setup.2cols {
     preCObject = LOAD_REGISTER
@@ -186,4 +191,7 @@ tt_content.gridelements_pi1.20.10.setup {
 
     # CSS-Wrapper (uid = 5)
     5 < plugin.tx_gridelements_pi1.setup.csswrapper
+
+    # Row (uid = 6)
+    6 < plugin.tx_gridelements_pi1.setup.row
 }
