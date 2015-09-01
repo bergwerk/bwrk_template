@@ -5,19 +5,31 @@ page {
    headerData {
       10 = FLUIDTEMPLATE
       10 {
-         file = EXT:bwrk_sitepackage/Resources/Private/Templates/Header/Icons.html
-         templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Templates/Header/
+         file = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Header/Icons.html
+         templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Header/
       }
    }
 
 
    10 = FLUIDTEMPLATE
    10 {
-      file = EXT:bwrk_sitepackage/Resources/Private/Templates/Page/Default.html
+#      file = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/Default.html
 
-      templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Templates/Page/
-      partialRootPath = EXT:bwrk_sitepackage/Resources/Private/Partials/Page/
-      layoutRootPath = EXT:bwrk_sitepackage/Resources/Private/Layouts/Page/
+      file.stdWrap.cObject = CASE
+      file.stdWrap.cObject {
+         key.data = levelfield:-1, backend_layout_next_level, slide
+         key.override.field = backend_layout
+
+         default = TEXT
+         default.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/Default.html
+
+         1 = TEXT
+         1.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/Ganzspaltig.html
+      }
+
+      templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Fluid/Templates/Page/
+      partialRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Partials/Page/
+      layoutRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Layouts/Page/
 
       variables {
          pageTitle = TEXT
