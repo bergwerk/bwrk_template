@@ -79,7 +79,7 @@
 										<numIndex index="1">columns large-12</numIndex>
 									</numIndex>
 								</items>
-								<default>columns large-4</default>
+								<default>columns large-6</default>
 							</config>
 						</TCEforms>
 					</width_column_md_1>
@@ -152,7 +152,7 @@
 										<numIndex index="1">columns large-12</numIndex>
 									</numIndex>
 								</items>
-								<default>columns large-4</default>
+								<default>columns large-6</default>
 							</config>
 						</TCEforms>
 					</width_column_md_2>

@@ -175,9 +175,6 @@ plugin.tx_gridelements_pi1.setup.4cols {
 
 # Assign Configuration
 tt_content.gridelements_pi1.20.10.setup {
-    # Col (uid = 1)
-    1 < plugin.tx_gridelements_pi1.setup.csswrapper
-
     # 2 Spalten (uid = 2)
     2 < plugin.tx_gridelements_pi1.setup.2cols
 

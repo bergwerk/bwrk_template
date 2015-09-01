@@ -11,6 +11,9 @@ gulp.task('watch', ['browserSync'], function () {
     watch(sass.src, function () {
         gulp.start('sass');
     });
+    watch(javascript.src, function () {
+        gulp.start('javascript');
+    });
     watch(fonts.src, function () {
         gulp.start('fonts');
     });
