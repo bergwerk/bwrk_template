@@ -1,0 +1,19 @@
+.page__head--links {
+	ul {
+		@extend .inline-list;
+	}
+}
+
+.page__content--aside {
+	.side-nav {
+		display: none;
+	}
+}
+
+@media #{$large-up} {
+	.page__content--aside {
+		.side-nav {
+			display: block;
+		}
+	}
+}

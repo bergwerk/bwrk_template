@@ -1,0 +1,58 @@
+@mixin panel-state($color, $font-color)
+{
+	background-color: $color;
+	border-color: $color;
+
+	.panel__heading h3 {
+		color: $font-color;
+	}
+}
+
+.panel {
+	padding: 0;
+
+	.panel__heading {
+		padding: $panel-padding;
+		border-bottom: inherit;
+
+		h3 {
+			margin: 0;
+			font-size: rem-calc(16);
+		}
+	}
+
+	.panel__body {
+		padding: $panel-padding;
+		background-color: $body-bg;
+	}
+
+	@include panel-state($secondary-color, $secondary-inverse);
+
+	&.alert {
+		@include panel-state($alert-color, $alert-inverse);
+	}
+
+	&.success {
+		@include panel-state($success-color, $success-inverse);
+	}
+
+	&.warning {
+		@include panel-state($warning-color, $warning-inverse);
+	}
+
+	&.info {
+		@include panel-state($info-color, $info-inverse);
+	}
+
+	&.panel--navigation {
+		.panel__body {
+			padding: 0;
+
+			.side-nav {
+				> li {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

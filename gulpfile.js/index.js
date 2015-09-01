@@ -1,7 +1,7 @@
 /*
  gulpfile.js
  ===========
- Rather than manage one giant configuration file responsible for creating  multiple tasks,
+ Rather than manage one giant configuration file responsible for creating multiple tasks,
  each task has been broken out into its own file in gulpfile.js/tasks. Any files
  in that directory get automatically required. Add a task file to that directory to create
  a new task.
