@@ -13,7 +13,7 @@ Project info and releases
 -------------------------
 
 Development:
-https://github.com/yabawock/sitepackage_starter/tree/develop
+https://github.com/yabawock/bwrk_sitepackage/tree/develop
 
 Stable:
 https://github.com/yabawock/sitepackage_starter/tree/master

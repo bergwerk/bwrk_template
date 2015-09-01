@@ -1,11 +1,11 @@
 {
-  "name": "sitepackage_starter",
+  "name": "bwrk_sitepackage",
   "version": "0.9.0",
   "description": "Template to be used as a starting point for building TYPO3 CMS websites as an extension.",
   "author": {
-    "name": "Morton Jonuschat",
-    "email": "m.jonuschat@mojocode.de",
-    "url": "https://github.com/yabawock/sitepackage_starter/"
+    "name": "BERGWERK",
+    "email": "technik@bergwerk.ag",
+    "url": "https://git.bergwerk.ag/typo3-extensions/bwrk_sitepackage/"
   },
   "license": "LGPL-3.0",
   "devDependencies": {
