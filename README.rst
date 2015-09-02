@@ -1,11 +1,11 @@
 BERGWERK Sitepackage Extension
 ===================
 
-A framework to start developing TYPO3 CMS extension that include all configuration and code for a website.
+A TYPO3 CMS extension for developing a Theme
 
 Depends on
 -------------------------
-	
+
 TYPO3 - 6.2.0-7.99.99
 CSS Styled Content - 6.2.0-7.9.99
 Gridelements - 3.2.0
