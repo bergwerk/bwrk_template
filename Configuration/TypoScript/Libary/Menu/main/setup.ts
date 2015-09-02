@@ -4,7 +4,6 @@ lib.menu_main {
     10 {
         entryLevel = 0
         wrap = |
-        #    excludeUidList = 21,29,39
 
         1 = TMENU
         1 {

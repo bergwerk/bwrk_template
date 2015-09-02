@@ -18,7 +18,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Libary/Menu/sub/setup.ts">
 
 
-
 ### PAGE
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/page.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/headerData.ts">
