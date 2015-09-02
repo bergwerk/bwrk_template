@@ -1,0 +1,37 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+{namespace bwrk=BERGWERK\BwrkMonsterkill\ViewHelpers}
+
+<f:layout name="Default"/>
+
+<f:section name="main">
+
+	<div class="tabs__wrapper">
+
+		<h1 class="tabs__headline">{field.headline}</h1>
+
+		<ul class="tabs" data-tab>
+			<f:for each="{field.contents}" as="content" iteration="iterator">
+				<li class="tab-title {f:if(condition:'{iterator.isFirst}', then:'active')}">
+					<a href="#tab{iterator.index}">{content.title}</a>
+				</li>
+			</f:for>
+		</ul>
+		<div class="tabs-content">
+			<f:for each="{field.contents}" as="content" iteration="iterator">
+				<div class="content {f:if(condition:'{iterator.isFirst}', then:'active')}"
+				     id="tab{iterator.index}">
+
+					<f:for each="{content.records -> dce:explode(delimiter:',')}" as="recordUid">
+
+						<div class="tabs__content">
+							<bwrk:content uid="{recordUid}"/>
+						</div>
+
+					</f:for>
+
+				</div>
+			</f:for>
+		</div>
+	</div>
+
+</f:section>

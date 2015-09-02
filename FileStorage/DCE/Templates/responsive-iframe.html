@@ -1,0 +1,29 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+
+<f:layout name="Default"/>
+
+<f:section name="main">
+
+	<div class="iframe--responsive">
+
+		<f:switch expression="{field.size}">
+			<f:case value="full">
+				<div class="flex-video" style="padding-bottom:100%">
+					<iframe class="embed-responsive-item" src="{field.url}"></iframe>
+				</div>
+			</f:case>
+			<f:case value="16by9">
+				<div class="flex-video widescreen">
+					<iframe class="embed-responsive-item" src="{field.url}"></iframe>
+				</div>
+			</f:case>
+			<f:case value="4by3">
+				<div class="flex-video">
+					<iframe class="embed-responsive-item" src="{field.url}"></iframe>
+				</div>
+			</f:case>
+		</f:switch>
+
+	</div>
+
+</f:section>
