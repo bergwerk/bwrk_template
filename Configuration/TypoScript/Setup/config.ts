@@ -1,5 +1,5 @@
 config {
-   baseURL = {$BASE_URL}
+   baseURL = {$config.baseURL}
    doctype = html5
    xmlprologue = none
    disablePrefixComment = 1

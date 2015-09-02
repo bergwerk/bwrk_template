@@ -212,3 +212,12 @@ RTE.config.tt_content.bodytext >
 ### Word HTML cleanup
 RTE.default.enableWordClean = 1
 RTE.default.enableWordClean.HTMLparser < RTE.default.proc.entryHTMLparser_db
+
+# FOUNDATION
+RTE.default {
+    proc.allowedClasses := addToList( FOUNDATION, button, button secondary, button disabled, button success, button alert, button warning, button info, button expand, button secondary expand, button disabled expand, button success expand, button alert expand, button warning expand, button info expand)
+    FE.proc.allowedClasses := addToList( FOUNDATION, button, button secondary, button disabled, button success, button alert, button warning, button info, button expand, button secondary expand, button disabled expand, button success expand, button alert expand, button warning expand, button info expand)
+    FE.buttons.link.properties.class.allowedClasses := addToList( FOUNDATION, button, button secondary, button disabled, button success, button alert, button warning, button info, button expand, button secondary expand, button disabled expand, button success expand, button alert expand, button warning expand, button info expand)
+    buttons.link.properties.class.allowedClasses := addToList( FOUNDATION, button, button secondary, button disabled, button success, button alert, button warning, button info, button expand, button secondary expand, button disabled expand, button success expand, button alert expand, button warning expand, button info expand)
+}
+

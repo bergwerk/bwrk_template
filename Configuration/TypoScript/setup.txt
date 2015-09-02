@@ -2,17 +2,19 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.txt">
 
+### bwrk_monsterkill
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_monsterkill/Configuration/TypoScript/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_monsterkill/Configuration/TypoScript/CssStyledContent/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_monsterkill/Configuration/TypoScript/Fluidbox/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_monsterkill/Configuration/TypoScript/ResponsiveImageRendering/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_monsterkill/Configuration/TypoScript/Table/setup.txt">
+
 ### CONFIG
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/config.ts">
 
-### HEADER
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/header.ts">
-
 ### PAGE
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/headerData.ts">
 
 ### EXTENSION
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Gridelements/setup.ts">
-
-
-
