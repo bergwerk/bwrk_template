@@ -15,6 +15,8 @@
 ### PAGE
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/page.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/headerData.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/fluidTemplate.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/footerData.ts">
 
 ### EXTENSION
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Gridelements/setup.ts">

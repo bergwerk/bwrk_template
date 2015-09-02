@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 			'css_styled_content' => '6.2.0-7.9.99',
 			'gridelements' => '3.2.0',
 			'bwrk_monsterkill' => '3.3.0',
-			'cooluri' => '1.0.39'
+			'cooluri' => '1.1.1'
 		),
 		'conflicts' => array(),
 		'suggests' => array()
