@@ -29,7 +29,6 @@ config {
    debug = 0
    intTarget =
    extTarget =
-   headerComment = {$config.headerComment}
    noPageTitle = 1
 
    // Enable Cool URI

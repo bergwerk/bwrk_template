@@ -19,6 +19,4 @@ config {
    admPanel = 0
    # cat=site package: advanced/130/190; type=options[None=,All=all,Cached=cached,Output=output]; label=Prefix local Anchors
    prefixLocalAnchors =
-   # cat=site package: advanced/130/200; type=string; label=Header Comment
-   headerComment = Based on sitepackage_starter — https://github.com/yabawock/sitepackage_starter/
 }
