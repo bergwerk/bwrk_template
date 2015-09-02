@@ -17,7 +17,6 @@ config {
    index_metatags =
    prologue = none
    linkVars = L
-   absRefPrefix = auto
    no_cache = {$config.no_cache}
    uniqueLinkVars = 1
    pageTitleFirst = 1

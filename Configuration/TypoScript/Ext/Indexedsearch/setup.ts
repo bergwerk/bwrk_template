@@ -1,0 +1,1 @@
+plugin.tx_indexedsearch.templateFile = fileadmin/templates/default/ext/indexedsearch/indexed_search.html

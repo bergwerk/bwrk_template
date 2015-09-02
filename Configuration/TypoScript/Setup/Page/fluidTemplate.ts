@@ -30,6 +30,19 @@ page {
          contentMain < styles.content.get
          contentLeft < styles.content.getLeft
          contentRight < styles.content.getRight
+
+         headerlogo =< lib.headerlogo
+         headerlinks =< lib.headerlinks
+
+         searchbox =< lib.searchbox
+         languageswitch =< lib.languageswitch
+         breadcrumb =< lib.breadcrumb
+
+         menuMain =< lib.menu_main
+         menuSub =< lib.menu_sub
+         menuMobile =< lib.menu_mobile
+
+         footer =< lib.footer
       }
    }
 }
