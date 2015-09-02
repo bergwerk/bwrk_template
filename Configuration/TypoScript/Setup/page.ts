@@ -61,11 +61,11 @@ page {
    }
 
    includeCSS {
-      styles = EXT:bwrk_sitepackage/Resources/Public/Css/styles.css
+      styles = EXT:bwrk_sitepackage/Resources/Public/Css/app.css
    }
 
    includeJSFooter {
-      site = EXT:bwrk_sitepackage/Resources/Public/JavaScript/site.js
+      site = EXT:bwrk_sitepackage/Resources/Public/JavaScript/app.js
    }
 
    jsInline {
