@@ -7,6 +7,7 @@
     "gulp-cli": "^0.2.0",
     "gulp-concat": "^2.2.0",
     "gulp-consolidate": "^0.1.2",
+    "gulp-favicons": "^1.0.9",
     "gulp-iconfont": "^1.0.0",
     "gulp-less": "^3.0.2",
     "gulp-minify-css": "^1.0.0",

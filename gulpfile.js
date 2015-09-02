@@ -1,5 +1,5 @@
 // Base Url
-var baseUrl = ' ';
+var baseUrl = '';
 
 // Gulp Modules
 var gulp = require('gulp'),
@@ -13,7 +13,8 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	plumber = require('gulp-plumber'),
 	rename = require('gulp-rename'),
-	sass = require('gulp-sass');
+	sass = require('gulp-sass'),
+    favicons = require('gulp-favicons');
 
 var onError = function (event)
 {
@@ -68,9 +69,12 @@ gulp.task('scripts', scriptsTask);
 
 gulp.task('icons', iconsTask);
 
+gulp.task('favicons', favicon);
+
 gulp.task('watch', watchTask);
 
 gulp.task('default', defaultTasks);
+
 
 function watchTask()
 {
@@ -126,4 +130,33 @@ function scriptsTask()
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest(baseUrl + '/Resources/Public/JavaScript'));
+}
+
+function favicon()
+{
+    gulp.src([baseUrl + '/Resources/Private/Assets/Icons/favicon.png'])
+        .pipe(favicons({
+            files: {
+                src: baseUrl + '/Resources/Private/Assets/Icons/favicon.png',
+                dest: '../../../Public/Icons',
+                iconsPath: '/Icons/',
+                html: '/dev/null'
+            },
+            icons: {
+                android: true,
+                appleIcon: true,
+                appleStartup: false,
+                coast: true,
+                favicons: true,
+                firefox: true,
+                opengraph: true,
+                windows: false,
+                yandex: false
+            },
+            settings: {
+                logging: false,
+                vinylMode: true
+            }
+        }))
+        .pipe(gulp.dest('./'));
 }
