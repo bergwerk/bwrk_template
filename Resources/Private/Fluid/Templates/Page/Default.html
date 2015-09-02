@@ -1,16 +1,17 @@
-<f:layout name="Default" />
-<f:section name="content">
-  <h2>{pageTitle}</h2>
+<f:layout name="Default"/>
 
-  <!--TYPO3SEARCH_begin-->
-  {contentMain -> f:format.raw()}
-  <!--TYPO3SEARCH_end-->
+<f:section name="standard">
+    <h2>{pageTitle}</h2>
 
-  {menuMain -> f:format.raw()}
+    <!--TYPO3SEARCH_begin-->
+    {contentMain -> f:format.raw()}
+    <!--TYPO3SEARCH_end-->
 
-  {headerlogo -> f:format.raw()}
+    {menuMain -> f:format.raw()}
 
-  <div class="testtest">
-    {headerlinks -> f:format.raw()}
-  </div>
+    {headerlogo -> f:format.raw()}
+
+    <div class="testtest">
+        {headerlinks -> f:format.raw()}
+    </div>
 </f:section>

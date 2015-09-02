@@ -9,16 +9,17 @@
                 <vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss>
                 <f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
             </label>
+
             <div class="select-wrap">
-            <vh:Form.SelectField
-                    options="{field.modifiedSettings}"
-                    property="{field.marker}"
-                    class="form-control selectpicker"
-                    id="field_{field.marker}"
-                    additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
-                    multiple="{field.multiselectForField}"
-                    value="{vh:Misc.PrefillField(field:field, mail:mail)}"
-                    />
+                <vh:Form.SelectField
+                        options="{field.modifiedSettings}"
+                        property="{field.marker}"
+                        class="form-control selectpicker"
+                        id="field_{field.marker}"
+                        additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+                        multiple="{field.multiselectForField}"
+                        value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+                        />
             </div>
         </div>
     </div>

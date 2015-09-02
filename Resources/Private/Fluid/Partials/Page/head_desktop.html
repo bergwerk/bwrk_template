@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="columns large-4">
+        <div class="page__head--logo">
+            <f:format.raw>{headerlogo}</f:format.raw>
+        </div>
+    </div>
+    <div class="columns large-8">
+        <div class="page__head--links">
+            <f:format.raw>{headerlinks}</f:format.raw>
+        </div>
+    </div>
+</div>
+
+<div class="page__head--menu">
+    <f:render partial="menu_main" arguments="{menu_main:menu_main, languageswitch:languageswitch}"/>
+</div>
+
+<div class="page__head--search">
+    <f:format.raw>{searchbox}</f:format.raw>
+</div>
+
+<div class="page__head--breadcrumb">
+    <f:format.raw>{breadcrumb}</f:format.raw>
+</div>

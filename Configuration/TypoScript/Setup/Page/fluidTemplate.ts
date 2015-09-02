@@ -10,7 +10,13 @@ page {
          default.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/Default.html
 
          1 = TEXT
-         1.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/Ganzspaltig.html
+         1.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/1-Column.html
+
+         2 = TEXT
+         2.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/2-Column-right.html
+
+         3 = TEXT
+         3.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/2-Column-left.html
       }
 
       templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Fluid/Templates/Page/
@@ -38,9 +44,9 @@ page {
          languageswitch =< lib.languageswitch
          breadcrumb =< lib.breadcrumb
 
-         menuMain =< lib.menu_main
-         menuSub =< lib.menu_sub
-         menuMobile =< lib.menu_mobile
+         menu_main =< lib.menu_main
+         menu_sub =< lib.menu_sub
+         menu_mobile =< lib.menu_mobile
 
          footer =< lib.footer
       }

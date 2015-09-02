@@ -1,2 +1,44 @@
-<h1>{siteTitle}</h1>
-<f:render section="content" />
+<div class="page__offcanvas">
+    <f:render partial="offcanvas" arguments="{
+		menu_mobile:menu_mobile,
+		searchbox:searchbox,
+		headerlinks:headerlinks,
+		languageswitch: languageswitch
+	}"/>
+</div>
+
+<div class="page__wrapper">
+    <div class="page__offcanvas--overlay"></div>
+
+    <div class="row">
+        <div class="columns large-12">
+            <div class="page__head page__head--desktop show-for-large-up">
+                <f:render partial="head_desktop" arguments="{
+					headerlogo:headerlogo,
+					headerlinks:headerlinks,
+					menu_main:menu_main,
+					languageswitch:languageswitch,
+					searchbox:searchbox,
+					breadcrumb:breadcrumb
+				}"/>
+            </div>
+
+            <div class="page__head page__head--mobile hide-for-large-up">
+                <f:render partial="head_mobile" arguments="{
+					headerlogo:headerlogo,
+					breadcrumb:breadcrumb
+				}"/>
+            </div>
+
+            <div class="page__content--wrapper">
+                <f:format.raw>{slider}</f:format.raw>
+
+                <f:render section="standard"/>
+
+            </div>
+            <div class="page__footer">
+                <f:format.raw>{footer}</f:format.raw>
+            </div>
+        </div>
+    </div>
+</div>

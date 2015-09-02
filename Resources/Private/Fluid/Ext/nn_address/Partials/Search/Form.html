@@ -1,22 +1,26 @@
 <div class="tx_nnaddress_search">
-	<f:translate key="LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:search" />
-	<f:form method="POST">
-		<f:form.textfield name="sword" value="{sword}" />
-		<f:if condition="!{settings.groups}">
-			<f:if condition="{groupHierachy}">
-				<f:then>
-					<f:for each="{groupHierachy}" as="pGroup" iteration="it">
-						<f:form.select class="tx_nnaddress_group" value="{pGroup.model.uid}" name="group" options="{pGroup.options}" optionLabelField="title" prependOptionValue="0" prependOptionLabel="{f:translate(key:'LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:all')}" />
-					</f:for>
-				</f:then>
-				<f:else>
-					<f:form.select class="tx_nnaddress_group" value="{selectedGroup}" name="group" options="{groups}" optionLabelField="title" prependOptionValue="0" prependOptionLabel="{f:translate(key:'LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:all')}" />
-				</f:else>
-			</f:if>
-		</f:if>
-		
-		<f:form.submit value="{f:translate(key:'LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:search')}" />
-	</f:form>
+    <f:translate key="LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:search"/>
+    <f:form method="POST">
+        <f:form.textfield name="sword" value="{sword}"/>
+        <f:if condition="!{settings.groups}">
+            <f:if condition="{groupHierachy}">
+                <f:then>
+                    <f:for each="{groupHierachy}" as="pGroup" iteration="it">
+                        <f:form.select class="tx_nnaddress_group" value="{pGroup.model.uid}" name="group"
+                                       options="{pGroup.options}" optionLabelField="title" prependOptionValue="0"
+                                       prependOptionLabel="{f:translate(key:'LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:all')}"/>
+                    </f:for>
+                </f:then>
+                <f:else>
+                    <f:form.select class="tx_nnaddress_group" value="{selectedGroup}" name="group" options="{groups}"
+                                   optionLabelField="title" prependOptionValue="0"
+                                   prependOptionLabel="{f:translate(key:'LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:all')}"/>
+                </f:else>
+            </f:if>
+        </f:if>
+
+        <f:form.submit value="{f:translate(key:'LLL:EXT:nn_address/Resources/Private/Language/locallang.xlf:search')}"/>
+    </f:form>
 </div>
 
- <f:flashMessages />
+<f:flashMessages/>

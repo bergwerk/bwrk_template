@@ -1,0 +1,16 @@
+<f:layout name="Default"/>
+
+<f:section name="standard">
+    <div class="row">
+        <div class="columns large-8">
+            <div class="page__content page__content--main">
+                <f:render partial="content" arguments="{content:content}"/>
+            </div>
+        </div>
+        <div class="columns large-4">
+            <div class="page__content page__content--aside">
+                <f:render partial="content_aside" arguments="{content:content_right, menu_sub:menu_sub}"/>
+            </div>
+        </div>
+    </div>
+</f:section>
