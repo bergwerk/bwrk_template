@@ -1,4 +1,6 @@
 config {
+   # Set the Base URL
+   baseURL =
    # cat=site package: advanced/130/110; type=boolean; label=No Cache
    no_cache = 0
    # cat=site package: advanced/130/120; type=options[Do not remove=0,Remove=1,Move to external file=external]; label=Remove default JavaScript
