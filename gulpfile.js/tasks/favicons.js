@@ -1,3 +1,4 @@
+var browserSync = require('browser-sync');
 var config = require('../config');
 var faviconConfig = require('../config/favicons');
 var gulp = require('gulp');
