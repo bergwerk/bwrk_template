@@ -1,1 +1,1 @@
-plugin.tx_indexedsearch.templateFile = fileadmin/templates/default/ext/indexedsearch/indexed_search.html
+plugin.tx_indexedsearch.templateFile = EXT:bwrk_sitepackage/Resources/Private/Fluid/Ext/Indexedsearch/indexed_search.html

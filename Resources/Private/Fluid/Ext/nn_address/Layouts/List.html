@@ -1,0 +1,19 @@
+<div class="tx-nn-address">
+	
+	<f:comment>
+		For simpler editing of the fluid template, here comes an alias map with some complex variables
+	</f:comment>
+	
+	{namespace nn=NN\NnAddress\ViewHelpers}
+	<f:alias map="{
+		orderby:       '{f:if(condition:\'{nn:gp(gp:\\\'orderBy\\\')}\',then:\'{nn:gp(gp:\\\'orderBy\\\',secure:1,check:\\\'/^([a-zA-Z]\{1,\})$/\\\')}\',else:\'lastName\')}',
+		order:         '{f:if(condition:\'{nn:gp(gp:\\\'order\\\')} == 0\',then:0,else:1)}',
+		
+		orderArgsOrga: '{orderBy:\'organisation\', sword:\'{sword}\',group:\'{selectedGroup}\',char:\'{nn:gp(gp:\\\'char\\\',secure:1,check:\\\'/^([A-Z]\{1\})$/\\\')}\',order:\'{f:if(condition:\\\'{nn:gp(gp:\\\\\\\'order\\\\\\\')} == 0\\\',then:1,else:0)}\'}',
+		orderArgsName: '{orderBy:\'lastName\',     sword:\'{sword}\',group:\'{selectedGroup}\',char:\'{nn:gp(gp:\\\'char\\\',secure:1,check:\\\'/^([A-Z]\{1\})$/\\\')}\',order:\'{f:if(condition:\\\'{nn:gp(gp:\\\\\\\'order\\\\\\\')} == 0\\\',then:1,else:0)}\'}'
+	}">
+
+	<f:render section="main" />
+	
+	</f:alias>
+</div>

@@ -7,6 +7,7 @@
 ### LIBARY
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Constants/block.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Constants/libary.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Constants/ext.ts">
 
 ### PAGE
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Constants/page.ts">

@@ -1,0 +1,35 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div id="fieldwrap_{field.uid}"
+     class="powermail_input form-group {field.css} {vh:Validation.ErrorClass(field:field, class:'has-error has-feedback')}">
+
+    <label for="field_{field.marker}" class="control-label col-sm-2" title="{field.description}">
+        <vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss>
+        <f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+    </label>
+    <div class="col-sm-6">
+    <f:if condition="{field.mandatory}">
+        <f:then>
+            <f:form.textfield
+                    type="{vh:Validation.FieldTypeFromValidation(field:field)}"
+                    property="{field.marker}"
+                    placeholder="{field.placeholder}"
+                    value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+                    class="form-control"
+                    additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+                    id="field_{field.marker}"
+                    required="required"/>
+        </f:then>
+        <f:else>
+            <f:form.textfield
+                    type="{vh:Validation.FieldTypeFromValidation(field:field)}"
+                    property="{field.marker}"
+                    placeholder="{field.placeholder}"
+                    value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+                    class="form-control"
+                    additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+                    id="field_{field.marker}"/>
+        </f:else>
+    </f:if>
+    </div>
+</div>

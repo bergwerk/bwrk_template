@@ -1,7 +1,7 @@
 plugin.tx_powermail {
     view {
-        templateRootPath = fileadmin/templates/default/ext/powermail/Templates/
-        partialRootPath = fileadmin/templates/default/ext/powermail/Partials/
-        layoutRootPath = fileadmin/templates/default/ext/powermail/Layouts/
+        templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Ext/Powermail/Templates/
+        partialRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Ext/Powermail/Partials/
+        layoutRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Ext/Powermail/TemplatLayoutses/
     }
 }

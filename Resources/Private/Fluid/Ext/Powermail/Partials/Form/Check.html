@@ -1,0 +1,28 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div id="fieldwrap_{field.uid}" class="fieldwrap_{field.uid} {field.css} form-group">
+    <!--<div class="check_outer {vh:Validation.ErrorClass(field:field, class:'field_error')}">-->
+    <div class="col-sm-2">
+        <label class="control-label">{field.title}</label>
+    </div>
+    <div class="col-sm-10">
+        <f:for each="{field.modifiedSettings}" as="setting" iteration="index">
+            <div class="checkbox">
+                <label for="field_{field.marker}_{index.cycle}">
+                    <f:form.checkbox
+                            property="{field.marker}."
+                            value="{setting.value}"
+                            checked="{vh:Misc.PrefillField(field:field, mail:mail, cycle:index.cycle)}"
+                            id="field_{field.marker}_{index.cycle}"
+                            additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field, iteration:index)}"
+                            class="checkbox checkbox_{field.uid}"/>
+
+                    <vh:string.RawAndRemoveXss>{setting.label}</vh:string.RawAndRemoveXss>
+                </label>
+
+            </div>
+        </f:for>
+    </div>
+    <!--<div class="field_error_container field_error_container_{field.marker}"></div>-->
+    <!--</div>-->
+</div>
