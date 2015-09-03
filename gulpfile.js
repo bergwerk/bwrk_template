@@ -155,3 +155,4 @@ function faviconTask() {
         }))
         .pipe(gulp.dest('Resources/Public/Icons'));
 }
+
