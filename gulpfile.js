@@ -54,11 +54,6 @@ var jsFilesApp = [
     baseUrlJs + 'modules/*.js'
 ];
 
-var jsFilesWebfont = [
-    baseUrlJs + 'libs/basic/webfont.js',
-    baseUrlJs + 'specific/webfontConfiguration.js'
-];
-
 gulp.task('styles', stylesTask);
 
 gulp.task('scripts', scriptsTask);
@@ -124,7 +119,6 @@ function scriptsTask() {
     };
 
     compileScripts(jsFilesApp, 'app');
-    compileScripts(jsFilesWebfont, 'fonts');
 }
 
 function faviconTask() {
