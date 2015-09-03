@@ -1,0 +1,42 @@
+p.lead, h2.lead {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+h2.h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: .67em;
+  -webkit-margin-after: .67em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
+}
+
+h3.h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: .67em;
+  -webkit-margin-after: .67em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold;
+}
+
+ul.grosser-absatz {
+  margin-bottom: 40px;
+}
+
+p.grosser-absatz {
+  margin-bottom: 40px;
+}
+
+p.kein-absatz {
+  margin-bottom: 0;
+}
+
+p.lead-inline, h2.lead-inline {
+  display: inline;
+}

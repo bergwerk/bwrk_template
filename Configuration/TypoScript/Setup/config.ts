@@ -43,7 +43,7 @@ config {
    sys_language_mode = content_fallback
    language = de
    locale_all = de_DE.UTF-8
-   htmlTag_setParams = lang="en" dir="ltr" class="no-js"
+   htmlTag_setParams = lang="de" dir="ltr"
    htmlTag_langKey = de-DE
 }
 

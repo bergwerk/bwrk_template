@@ -16,11 +16,11 @@ page {
    }
 
    includeCSS {
-      styles = EXT:bwrk_sitepackage/Resources/Public/Css/app.min.css
+      file1 = EXT:bwrk_sitepackage/Resources/Public/Css/app.min.css
    }
 
    includeJSFooter {
-      site = EXT:bwrk_sitepackage/Resources/Public/JavaScript/app.min.js
+      file1 = EXT:bwrk_sitepackage/Resources/Public/JavaScript/app.min.js
    }
 
    jsInline {
