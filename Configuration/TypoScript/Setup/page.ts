@@ -19,8 +19,13 @@ page {
       file1 = EXT:bwrk_sitepackage/Resources/Public/Css/app.min.css
    }
 
-   includeJSFooter {
+#   includeJS {
+#      file1 = EXT:bwrk_sitepackage/Resources/Public/JavaScript/fonts.min.js
+#   }
+
+   includeJSFooterlibs {
       file1 = EXT:bwrk_sitepackage/Resources/Public/JavaScript/app.min.js
+      file2 = EXT:bwrk_sitepackage/Resources/Public/JavaScript/fonts.min.js
    }
 
    jsInline {

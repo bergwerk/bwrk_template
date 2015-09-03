@@ -1,5 +1,5 @@
 // Base Url
-//var baseUrl = '';
+var baseUrlJs = 'Resources/Private/Src/JavaScript/';
 
 // Gulp Modules
 var gulp = require('gulp'),
@@ -7,8 +7,6 @@ var gulp = require('gulp'),
     consolidate = require('gulp-consolidate'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    less = require('gulp-less'),
-    minifyCSS = require('gulp-minify-css'),
     path = require('path'),
     watch = require('gulp-watch'),
     plumber = require('gulp-plumber'),
@@ -16,50 +14,49 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     favicons = require('gulp-favicons');
 
-var onError = function (event) {
-    return gulp.src(event.path)
-        .pipe(refresh(lrserver));
-};
-
 var defaultTasks = [
     'styles',
     'scripts',
     'watch'
 ];
 
-var jsFiles = [
-
+var jsFilesApp = [
     // Basic Libraries
-    'Resources/Private/Src/JavaScript/libs/basic/jquery.min.js',
-    //'Resources/Private/Src/JavaScript/libs/basic/jquery.noConflict.js',
-    'Resources/Private/Src/JavaScript/libs/basic/modernizr.js',
-    'Resources/Private/Src/JavaScript/libs/basic/fastclick.js',
-    'Resources/Private/Src/JavaScript/libs/basic/ssm.js',
+    baseUrlJs + 'libs/basic/jquery.min.js',
+    //baseUrlJs + 'libs/basic/jquery.noConflict.js',
+    baseUrlJs + 'libs/basic/modernizr.js',
+    baseUrlJs + 'libs/basic/fastclick.js',
+    baseUrlJs + 'libs/basic/ssm.js',
 
     // Foundation Libraries
-    'Resources/Private/Src/JavaScript/libs/foundation/foundation.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.abide.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.accordion.js',
-    'Resources/Private/Src/JavaScript/libs/foundation/foundation.alert.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.clearing.js',
-    'Resources/Private/Src/JavaScript/libs/foundation/foundation.dropdown.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.equalizer.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.interchange.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.joyride.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.magellan.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.offcanvas.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.orbit.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.reveal.js',
-    //'Resources/Private/Src/JavaScript/libs/foundation/foundation.slider.js',
-    'Resources/Private/Src/JavaScript/libs/foundation/foundation.tab.js',
-    'Resources/Private/Src/JavaScript/libs/foundation/foundation.tooltip.js',
-    'Resources/Private/Src/JavaScript/libs/foundation/foundation.topbar.js',
+    baseUrlJs + 'libs/foundation/foundation.js',
+    //baseUrlJs + 'libs/foundation/foundation.abide.js',
+    //baseUrlJs + 'libs/foundation/foundation.accordion.js',
+    baseUrlJs + 'libs/foundation/foundation.alert.js',
+    //baseUrlJs + 'libs/foundation/foundation.clearing.js',
+    baseUrlJs + 'libs/foundation/foundation.dropdown.js',
+    //baseUrlJs + 'libs/foundation/foundation.equalizer.js',
+    //baseUrlJs + 'libs/foundation/foundation.interchange.js',
+    //baseUrlJs + 'libs/foundation/foundation.joyride.js',
+    //baseUrlJs + 'libs/foundation/foundation.magellan.js',
+    //baseUrlJs + 'libs/foundation/foundation.offcanvas.js',
+    //baseUrlJs + 'libs/foundation/foundation.orbit.js',
+    //baseUrlJs + 'libs/foundation/foundation.reveal.js',
+    //baseUrlJs + 'libs/foundation/foundation.slider.js',
+    baseUrlJs + 'libs/foundation/foundation.tab.js',
+    baseUrlJs + 'libs/foundation/foundation.tooltip.js',
+    baseUrlJs + 'libs/foundation/foundation.topbar.js',
 
     // Global Stuff
-    'Resources/Private/Src/JavaScript/global/*.js',
+    baseUrlJs + 'global/*.js',
 
     // Custom Modules
-    'Resources/Private/Src/JavaScript/modules/*.js'
+    baseUrlJs + 'modules/*.js'
+];
+
+var jsFilesWebfont = [
+    baseUrlJs + 'libs/basic/webfont.js',
+    baseUrlJs + 'specific/webfontConfiguration.js'
 ];
 
 gulp.task('styles', stylesTask);
@@ -68,15 +65,16 @@ gulp.task('scripts', scriptsTask);
 
 gulp.task('icons', iconsTask);
 
-gulp.task('favicons', favicon);
+gulp.task('favicon', faviconTask);
 
 gulp.task('watch', watchTask);
 
 gulp.task('default', defaultTasks);
 
 function watchTask() {
-    gulp.watch('Resources/Private/Src/Scss/**/*.scss', ['styles'], onError);
-    gulp.watch(jsFiles, ['scripts']);
+    gulp.watch('Resources/Private/Src/Scss/**/*.scss', ['styles']);
+    gulp.watch(jsFilesApp, ['scripts']);
+    gulp.watch(jsFilesWebfont, ['scripts']);
 }
 
 function iconsTask() {
@@ -115,20 +113,25 @@ function stylesTask() {
 }
 
 function scriptsTask() {
-    gulp.src(jsFiles)
-        .pipe(plumber())
-        .pipe(concat('app.js'))
-        .pipe(gulp.dest('Resources/Public/JavaScript'))
-        .pipe(uglify())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('Resources/Public/JavaScript'));
+    var compileScripts = function (files, targetFile) {
+        gulp.src(files)
+            .pipe(plumber())
+            .pipe(concat(targetFile + '.js'))
+            .pipe(gulp.dest('Resources/Public/JavaScript'))
+            .pipe(uglify())
+            .pipe(rename({suffix: '.min'}))
+            .pipe(gulp.dest('Resources/Public/JavaScript'));
+    };
+
+    compileScripts(jsFilesApp, 'app');
+    compileScripts(jsFilesWebfont, 'fonts');
 }
 
-function favicon() {
-    gulp.src(['Resources/Private/Assets/Icons/favicon.png'])
+function faviconTask() {
+    gulp.src(['Resources/Private/Assets/Icons/faviconTask.png'])
         .pipe(favicons({
             files: {
-                src: 'Resources/Private/Assets/Icons/favicon.png',
+                src: 'Resources/Private/Assets/Icons/faviconTask.png',
                 dest: 'Resources/Public/Icons',
                 iconsPath: '/Icons/',
                 html: '/dev/null'
