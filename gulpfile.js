@@ -69,7 +69,6 @@ gulp.task('default', defaultTasks);
 function watchTask() {
     gulp.watch('Resources/Private/Src/Scss/**/*.scss', ['styles']);
     gulp.watch(jsFilesApp, ['scripts']);
-    gulp.watch(jsFilesWebfont, ['scripts']);
 }
 
 function iconsTask() {
@@ -83,12 +82,12 @@ function iconsTask() {
                 .pipe(consolidate('lodash', {
                     glyphs: codepoints,
                     fontName: 'icon',
-                    fontPath: 'Resources/Public/Fonts/generated',
+                    fontPath: '../Fonts/generated/',
                     className: 'icon'
                 }))
-                .pipe(gulp.dest('Resources/Private/Src/Scss/generated/'));
+                .pipe(gulp.dest('Resources/Private/Src/Scss/generated'));
         })
-        .pipe(gulp.dest('fonts/'));
+        .pipe(gulp.dest('Resources/Public/Fonts/generated'));
 }
 
 function stylesTask() {
