@@ -30,7 +30,7 @@ lib {
 #### Add File Storage
 Add a File Storage to the TYPO3 Root
 Name: bwrk_sitepackage
-Path: <b>typo3conf/ext/bwrk_sitepackage/FileStorage</b>
+Path: *typo3conf/ext/bwrk_sitepackage/FileStorage*
 Access: Is Searchable, Is online
 
 #### Basic Backend-Layouts Configuration
@@ -39,7 +39,7 @@ Access: Is Searchable, Is online
 - 2 Spaltig, Links
 - 3 Spaltig
 
-Configure the Backend-Layout ID <b>EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/fluidTemplate.ts</b>
+Configure the Backend-Layout ID *EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/fluidTemplate.ts*
 ```
 ID = TEXT
 ID.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/1-Column.html
@@ -52,9 +52,9 @@ ID.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/1-Column.
 - 4 Spalten
 - CSS-Wrapper
 
-Configure the Gridelements ID in <b>bwrk_sitepackage/Configuration/TypoScript/Ext/Gridelements/setup.ts</b>
+Configure the Gridelements ID in *bwrk_sitepackage/Configuration/TypoScript/Ext/Gridelements/setup.ts*
 ```
 # Gridelement
 ID < plugin.tx_gridelements_pi1.setup.2cols
 ```
-Flexform Configuration in <b>typo3conf/ext/bwrk_sitepackage/FileStorage/Gridelements</b>
+Flexform Configuration in *typo3conf/ext/bwrk_sitepackage/FileStorage/Gridelements*
