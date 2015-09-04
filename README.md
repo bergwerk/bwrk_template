@@ -50,5 +50,4 @@ Configure the Gridelements ID in <b>bwrk_sitepackage/Configuration/TypoScript/Ex
 ```
 # Gridelement
 2 < plugin.tx_gridelements_pi1.setup.2cols
-
 ```
