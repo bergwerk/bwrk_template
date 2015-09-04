@@ -15,7 +15,7 @@ Insert this in your Default Root Template Constants
 
 ```
 config {
-  baseURL = http://bwrk-devkit.local
+  baseURL = 
 }
 
 lib {
