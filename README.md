@@ -28,10 +28,10 @@ lib {
 ```
 
 #### Add File Storage
-Add a File Storage to the TYPO3 Root
-Name: bwrk_sitepackage
-Path: *typo3conf/ext/bwrk_sitepackage/FileStorage*
-Access: Is Searchable, Is online
+Add a File Storage to the TYPO3 Root <br>
+Name: bwrk_sitepackage<br>
+Path: *typo3conf/ext/bwrk_sitepackage/FileStorage*<br>
+Access: Is Searchable, Is online<br>
 
 #### Basic Backend-Layouts Configuration
 - Ganzspaltig
