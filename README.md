@@ -15,7 +15,7 @@ Insert this in your Default Root Template Constants
 
 ```
 config {
-  baseURL = 
+  baseURL =
 }
 
 lib {
@@ -49,5 +49,5 @@ ID.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/1-Column.
 Configure the Gridelements ID in <b>bwrk_sitepackage/Configuration/TypoScript/Ext/Gridelements/setup.ts</b>
 ```
 # Gridelement
-2 < plugin.tx_gridelements_pi1.setup.2cols
+ID < plugin.tx_gridelements_pi1.setup.2cols
 ```
