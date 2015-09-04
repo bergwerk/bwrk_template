@@ -1,14 +1,14 @@
 <?php
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Site Package Example',
+	'title' => 'BERGWERK Sitepackage',
 	'description' => '',
 	'category' => 'templates',
-	'version' => '0.9.0',
+	'version' => '1.0.0',
 	'state' => 'stable',
 	'clearcacheonload' => 1,
-	'author' => 'Morton Jonuschat',
-	'author_email' => 'm.jonuschat@mojocode.de',
-	'author_company' => 'MoJo Code',
+	'author' => 'BERGWERK [MJH]',
+	'author_email' => 'mjh@bergwerk.ag',
+	'author_company' => 'BERGWERK',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '6.2.0-7.99.99',
