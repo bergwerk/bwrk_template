@@ -10,7 +10,8 @@ A TYPO3 CMS extension for developing a Theme
 - BWRK_Monsterkill - 3.3.0
 - Cooluri - 1.1.1
 
-###
+
+### Basic Typoscript Setup (Constants)
 
 ```typoscript
 config {
