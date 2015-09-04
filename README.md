@@ -2,8 +2,7 @@
 
 A TYPO3 CMS Extension for developing a Basic Foundation TYPO3 Template
 
-### Depends on
-##### TYPO3 Extensions
+### Dependencies
 - TYPO3 - 6.2.0-7.99.99
 - CSS Styled Content - 6.2.0-7.9.99
 - Gridelements - 3.2.0
@@ -11,32 +10,45 @@ A TYPO3 CMS Extension for developing a Basic Foundation TYPO3 Template
 - Cooluri - 1.1.1
 
 
-#### Basic Typoscript Setup (Constants)
+#### Basic TypoScript
+Insert this in your Default Root Template Constants
 
-```typoscript
+```
 config {
   baseURL = http://bwrk-devkit.local
 }
 
 lib {
-  headerlogo = 27
+  headerlogo = ID
 
-  headerlinks = 3
+  headerlinks = ID
 
-  footer = 34
+  footer = ID
 }
+```
 
+#### Basic Backend-Layouts Configuration
+- Ganzspaltig
+- 2 Spaltig, Rechs
+- 2 Spaltig, Links
+- 3 Spaltig
 
-// depends on bwrk_powermail_addon
-EMAIL_ADMIN_FROM_EMAIL = technik@bergwerk.ag
-EMAIL_ADMIN_FROM_NAME = DevKit TYPO3 6.2
+Configure the Backend-Layout ID <b>EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/fluidTemplate.ts</b>
+```
+ID = TEXT
+ID.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/1-Column.html
+```
 
-EMAIL_ADMIN_TO_EMAIL = technik@bergwerk.ag
-EMAIL_ADMIN_TO_NAME = DevKit TYPO3 6.2
+#### Basic Gridelements Configuration
+- Ganzspaltig (Row)
+- 2 Spalten
+- 3 Spalten
+- 4 Spalten
+- CSS-Wrapper
 
-EMAIL_CONTACT_FROM_EMAIL = technik@bergwerk.ag
-EMAIL_CONTACT_FROM_NAME = DevKit TYPO3 6.2
+Configure the Gridelements ID in <b>bwrk_sitepackage/Configuration/TypoScript/Ext/Gridelements/setup.ts</b>
+```
+# Gridelement
+2 < plugin.tx_gridelements_pi1.setup.2cols
 
-EMAIL_CONTACT_TO_EMAIL = technik@bergwerk.ag
-EMAIL_CONTACT_TO_NAME = DevKit TYPO3 6.2
 ```
