@@ -1,17 +1,7 @@
 <f:layout name="Default"/>
 
 <f:section name="standard">
-    <h2>{pageTitle}</h2>
-
-    <!--TYPO3SEARCH_begin-->
-    {contentMain -> f:format.raw()}
-    <!--TYPO3SEARCH_end-->
-
-    {menuMain -> f:format.raw()}
-
-    {headerlogo -> f:format.raw()}
-
-    <div class="testtest">
-        {headerlinks -> f:format.raw()}
+    <div class="page__content">
+        <f:render partial="content" arguments="{content:contentMain}"/>
     </div>
 </f:section>

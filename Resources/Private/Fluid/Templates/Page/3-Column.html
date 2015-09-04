@@ -2,12 +2,17 @@
 
 <f:section name="standard">
     <div class="row">
-        <div class="columns large-8">
+        <div class="columns large-3">
+            <div class="page__content page__content--aside">
+                <f:render partial="content_aside" arguments="{content:contentLeft, menu_sub:menu_sub}"/>
+            </div>
+        </div>
+        <div class="columns large-6">
             <div class="page__content page__content--main">
                 <f:render partial="content" arguments="{content:contentMain}"/>
             </div>
         </div>
-        <div class="columns large-4">
+        <div class="columns large-3">
             <div class="page__content page__content--aside">
                 <f:render partial="content_aside" arguments="{content:contentRight, menu_sub:menu_sub}"/>
             </div>

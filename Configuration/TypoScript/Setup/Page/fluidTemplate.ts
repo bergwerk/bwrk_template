@@ -13,10 +13,14 @@ page {
          1.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/1-Column.html
 
          2 = TEXT
-         2.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/2-Column-right.html
+         2.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/2-Column-left.html
 
          3 = TEXT
-         3.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/2-Column-left.html
+         3.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/2-Column-right.html
+
+         4 = TEXT
+         4.value = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Page/3-Column.html
+
       }
 
       templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Fluid/Templates/Page/
