@@ -19,4 +19,16 @@ config {
    admPanel = 0
    # cat=site package: advanced/130/190; type=options[None=,All=all,Cached=cached,Output=output]; label=Prefix local Anchors
    prefixLocalAnchors =
+
+   EMAIL_ADMIN_FROM_EMAIL =
+   EMAIL_ADMIN_FROM_NAME =
+
+   EMAIL_ADMIN_TO_EMAIL =
+   EMAIL_ADMIN_TO_NAME =
+
+   EMAIL_CONTACT_FROM_EMAIL =
+   EMAIL_CONTACT_FROM_NAME =
+
+   EMAIL_CONTACT_TO_EMAIL =
+   EMAIL_CONTACT_TO_NAME =
 }
