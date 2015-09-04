@@ -27,6 +27,12 @@ lib {
 }
 ```
 
+#### Add File Storage
+Add a File Storage to the TYPO3 Root
+Name: bwrk_sitepackage
+Path: <b>typo3conf/ext/bwrk_sitepackage/FileStorage</b>
+Access: Is Searchable, Is online
+
 #### Basic Backend-Layouts Configuration
 - Ganzspaltig
 - 2 Spaltig, Rechs
@@ -51,3 +57,4 @@ Configure the Gridelements ID in <b>bwrk_sitepackage/Configuration/TypoScript/Ex
 # Gridelement
 ID < plugin.tx_gridelements_pi1.setup.2cols
 ```
+Flexform Configuration in <b>typo3conf/ext/bwrk_sitepackage/FileStorage/Gridelements</b>
