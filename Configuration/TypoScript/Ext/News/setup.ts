@@ -126,7 +126,7 @@ plugin.tx_news {
                     maxHeight = 225
                 }
 
-                dummyImage = fileadmin/templates/default/img/dummyimage.png
+                dummyImage = typo3conf/ext/bwrk_sitepackage/FileStorage/PlaceholderImages/placeholder-news.jpg
             }
 
             # Paginate configuration.
@@ -161,6 +161,7 @@ plugin.tx_news {
         #                    cObject = TEXT
         #                }
         #            }
+
         #        }
 
         # Opengraph implementation
