@@ -1,6 +1,8 @@
 page = PAGE
+page.config =< config
 page {
    typeNum = 0
+
 
    meta {
       viewport = {$page.meta.viewport}

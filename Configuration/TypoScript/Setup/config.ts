@@ -10,7 +10,7 @@ config {
    sendCacheHeaders = 1
    cache_period = 259200
    redirectOldLinksToNew = 0
-   spamProtectEmailAddresses = 13
+   spamProtectEmailAddresses = 2
    spamProtectEmailAddresses_atSubst = <span style="display:none;">NO SPAM SPAN!</span>
    index_enable = 1
    index_externals = 1
