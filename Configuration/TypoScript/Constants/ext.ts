@@ -1,8 +1,8 @@
-### Indexedsearch
-# Seiten-ID mit der Suchergebnis-Seite
+# Indexedsearch
+## Seiten-ID mit der Suchergebnis-Seite
 SEARCH_PAGE_ID = 14
 
-### News
+# News
 plugin.tx_news {
    view {
       templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Ext/News/Templates/
@@ -15,11 +15,11 @@ plugin.tx_news {
    }
 }
 
-### nn_address
+# nn_address
 plugin.tx_nnaddress.settings.includeCSS = 0
 
 
-### powermail
+# powermail
 EMAIL_ADMIN_FROM_EMAIL =
 EMAIL_ADMIN_FROM_NAME =
 
@@ -32,6 +32,5 @@ EMAIL_CONTACT_FROM_NAME =
 EMAIL_CONTACT_TO_EMAIL =
 EMAIL_CONTACT_TO_NAME =
 
-
-
-
+# tt_content
+content.defaultHeaderType = 3

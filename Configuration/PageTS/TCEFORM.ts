@@ -10,9 +10,10 @@ TCEFORM {
 	tt_content {
 		header_layout {
 			altLabels {
-				1 = H1
-				2 = H2
-				3 = H3
+				0 = Standard (H3)
+				1 = H1 (nur 1x pro Seite!)
+				2 = H2 (nur 1x pro Seite!)
+				3 = H3 (Standard)
 				4 = H4
 				5 = H5
 			}
@@ -64,18 +65,4 @@ TCEFORM {
 			}
 		}
 	}
-}
-
-### ÜBERSCHRIFT-TYPEN ANPASSEN
-################################################
-################################################
-################################################
-// PageTSConfig
-TCEFORM.tt_content.header_layout.altLabels {
-    0 = Standard (H3)
-    1 = H1 (nur 1x pro Seite!)
-    2 = H2 (nur 1x pro Seite!)
-    3 = H3 (Standard)
-    4 = H4
-    5 = H5
 }

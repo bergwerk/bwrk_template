@@ -33,6 +33,3 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/News/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/nn_address/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/Powermail/setup.ts">
-
-
-
