@@ -1,14 +1,9 @@
 <!-- ###RULES### begin -->
 <div data-alert class="alert-box info">
-    <h3>###RULES_HEADER###</h3>
-    <p>###RULES_TEXT###</p>
+    <span>###RULES_TEXT###</span>
     <a href="#" class="close">&times;</a>
 </div>
 <!-- ###RULES### end -->
-
-
-
-
 
 <!-- ###RESULT_SECTION_LINKS### begin -->
 <div class="tx-indexedsearch-sec">
@@ -19,7 +14,6 @@
 <!-- ###RESULT_SECTION_LINKS### end -->
 
 
-
 <!-- ###RESULT_SECTION_LINKS_LINK### begin -->
 <tr>
     <td width="100%">--&gt; ###LINK###</td>
@@ -27,62 +21,28 @@
 <!-- ###RESULT_SECTION_LINKS_LINK### end -->
 
 
-
-<!-- ###SECTION_HEADER### begin -->
-<div class="tx-indexedsearch-secHead"><a name="###ANCHOR_URL###"></a>
-    <table cellpadding="0" cellspacing="0" border="0" summary="Section header">
-        <tr>
-            <td class="tx-indexedsearch-title title" width="100%">###SECTION_TITLE###</td>
-            <td class="tx-indexedsearch-result-count result-count" nowrap="nowrap">###RESULT_COUNT###
-                ###RESULT_NAME###
-            </td>
-        </tr>
-    </table>
-</div>
-
-<!-- ###SECTION_HEADER### end -->
-
-
-
 <!-- ###RESULT_OUTPUT### begin -->
-<div class="tx-indexedsearch-res">
-    <table cellpadding="0" cellspacing="0" border="0" summary="Result row">
-        <!-- ###HEADER_ROW### begin -->
-        <tr>
-            <td class="tx-indexedsearch-icon icon" nowrap="nowrap">###ICON###</td>
-            <td class="tx-indexedsearch-result-number result-number" nowrap="nowrap">###RESULT_NUMBER###</td>
-            <td class="tx-indexedsearch-title title" width="100%">###TITLE###</td>
-            <td class="tx-indexedsearch-percent percent" nowrap="nowrap">###RATING###</td>
-        </tr>
-        <!-- ###HEADER_ROW### end -->
+<hr>
+<div class="search__output">
+    <div class="search__output-result">
+        <div class="large-12 small-12">
+            <div class="output-result__site">
+               <span class="output-result__site-title">
+                   ###TITLE###
+               </span>
+            </div>
 
-        <!-- ###ROW_LONG### begin -->
-        <tr>
-            <td>&nbsp;</td>
-            <td class="tx-indexedsearch-descr descr" width="100%" colspan="3">###DESCRIPTION###</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td class="tx-indexedsearch-info info" width="100%" colspan="3">###TEXT_ITEM_SIZE### ###SIZE### -
-                ###TEXT_ITEM_CRDATE### ###CREATED### - ###TEXT_ITEM_MTIME### ###MODIFIED###<br/>
-                ###TEXT_ITEM_PATH### <span class="tx-indexedsearch-path path">###PATH###</span></td>
-        </tr>
-        <!-- ###ROW_LONG### end -->
+            <div class="output-result__description">
+                ###DESCRIPTION###
+            </div>
 
-        <!-- ###ROW_SHORT### begin -->
-        <tr>
-            <td>&nbsp;</td>
-            <td class="tx-indexedsearch-descr descr" width="100%" colspan="3">###DESCRIPTION###</td>
-        </tr>
-        <!-- ###ROW_SHORT### end -->
+            <div class="output-result__path">
+                <span class="icon icon-home"></span> <span class="output-result__path-link">###PATH###</span>
+            </div>
+        </div>
 
-        <!-- ###ROW_SUB### begin -->
-        <tr>
-            <td>&nbsp;</td>
-            <td class="tx-indexedsearch-list list" width="100%" colspan="3"><br/>###TEXT_ROW_SUB###<br/><br/></td>
-        </tr>
-        <!-- ###ROW_SUB### end -->
-    </table>
-    <br/>
+    </div>
 </div>
+
 <!-- ###RESULT_OUTPUT### end -->
+

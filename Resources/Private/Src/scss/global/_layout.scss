@@ -52,3 +52,27 @@
 		left: 0;
 	}
 }
+
+//
+// Indexsearch Styles
+//------------------------------------------------------------------------
+
+.search__output {
+  margin-bottom: rem-calc(15);
+}
+
+.search__output-result {
+  .output-result {
+	&__site {
+	  &-title {
+		font-size: 1.25rem;
+	  }
+	}
+
+	&__path {
+	  &-link {
+		font-size: rem-calc(12);
+	  }
+	}
+  }
+}

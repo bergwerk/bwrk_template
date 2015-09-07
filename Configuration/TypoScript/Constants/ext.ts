@@ -34,3 +34,4 @@ EMAIL_CONTACT_TO_NAME =
 
 # tt_content
 content.defaultHeaderType = 3
+

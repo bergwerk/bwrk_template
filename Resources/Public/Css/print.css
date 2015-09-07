@@ -9137,6 +9137,18 @@ table {
   left: 0;
 }
 
+.search__output {
+  margin-bottom: 0.9375rem;
+}
+
+.search__output-result .output-result__site-title {
+  font-size: 1.25rem;
+}
+
+.search__output-result .output-result__path-link {
+  font-size: 0.75rem;
+}
+
 .panel {
   padding: 0;
   background-color: #e7e7e7;
