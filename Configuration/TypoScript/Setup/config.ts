@@ -48,7 +48,7 @@ config {
 }
 
 [globalVar = GP:L = 1]
-   page.config {
+   config {
       sys_language_uid = 1
       language = en
       locale_all = en_US
