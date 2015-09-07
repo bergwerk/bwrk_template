@@ -2,7 +2,7 @@ $mobile-menu-width: rem-calc(260);
 $mobile-menu-speed: 300ms;
 $mobile-menu-effect: ease;
 
-.page__offcanvas--overlay {
+.page__offcanvas-overlay {
 	position: absolute;
 	z-index: 999;
 	width: 100%;
@@ -118,7 +118,7 @@ $mobile-menu-effect: ease;
 body.page__offcanvas--active {
 	overflow: hidden !important;
 
-	.page__offcanvas--overlay {
+	.page__offcanvas-overlay {
 		height: 100%;
 		opacity: 0.5;
 	}

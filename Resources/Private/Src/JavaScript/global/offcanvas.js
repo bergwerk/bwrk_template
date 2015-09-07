@@ -10,7 +10,7 @@
 			menu: $('.page__offcanvas'),
 			toggle: $('.page__offcanvas--toggle'),
 			toggleClass: 'page__offcanvas--active',
-			overlay: $('.page__offcanvas--overlay')
+			overlay: $('.page__offcanvas-overlay')
 		};
 
 		toggleOffCanvas();

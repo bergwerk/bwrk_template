@@ -9218,7 +9218,7 @@ table {
   margin: 0;
 }
 
-.page__offcanvas--overlay {
+.page__offcanvas-overlay {
   position: absolute;
   z-index: 999;
   width: 100%;
@@ -9343,7 +9343,7 @@ body.page__offcanvas--active {
   overflow: hidden !important;
 }
 
-body.page__offcanvas--active .page__offcanvas--overlay {
+body.page__offcanvas--active .page__offcanvas-overlay {
   height: 100%;
   opacity: 0.5;
 }
