@@ -21,25 +21,16 @@ Render Powermail Form
                         additionalAttributes="{vh:Validation.EnableParsleyAndAjax(form:form)}"
                         class="powermail_form {form.css} {vh:Misc.MorestepClass(activate:settings.main.moresteps, class:'powermail_morestep')}{bwrk:forms()}">
 
-                    <f:if condition="{form.title}">
-                        <h3>{form.title}</h3>
-                    </f:if>
-
                     <f:render partial="Misc/FormError" arguments="{_all}"/>
 
                     <f:for each="{form.pages}" as="page">
-                        <fieldset id="fieldset_{page.uid}" class="powermail_fieldset {page.css}">
 
-                            <f:if condition="{page.title}">
-                                <legend class="legend">{page.title}</legend>
-                            </f:if>
 
-                            <f:for each="{page.fields}" as="field">
-                                <f:render partial="Form/{vh:String.Upper(string:field.type)}"
-                                          arguments="{field:field}"/>
-                            </f:for>
+                        <f:for each="{page.fields}" as="field">
+                            <f:render partial="Form/{vh:String.Upper(string:field.type)}"
+                                      arguments="{field:field}"/>
+                        </f:for>
 
-                        </fieldset>
                     </f:for>
 
                     <f:form.hidden name="mail[form]" value="{form.uid}"/>
