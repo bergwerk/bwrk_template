@@ -12,26 +12,26 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_monsterkill/Configuration/TypoScript/Table/setup.txt">
 
 ### CONFIG
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/config.ts">
 
 ### LIBARY
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Menu/main/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Menu/mobile/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Menu/sub/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Breadcrumb/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Block/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Languageswitcher/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Library/Searchbox/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Menu/main/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Menu/mobile/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Menu/sub/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Breadcrumb/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Block/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Languageswitcher/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Searchbox/setup.ts">
 
 ### PAGE
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/headerData.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/fluidTemplate.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Setup/Page/footerData.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/headerData.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/fluidTemplate.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/footerData.ts">
 
 ### EXTENSION
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/Gridelements/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/Indexedsearch/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/News/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/nn_address/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_sitepackage/Configuration/TypoScript/Ext/Powermail/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Gridelements/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Indexedsearch/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/News/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/nn_address/setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Powermail/setup.ts">

@@ -8,7 +8,7 @@ RTE.classes {
 ### Defaults
 RTE.default {
 	skin = EXT:t3skin/rtehtmlarea/htmlarea.css
-	contentCSS = typo3conf/ext/bwrk_sitepackage/Resources/Public/Css/rte.css
+	contentCSS = typo3conf/ext/bwrk_template/Resources/Public/Css/rte.css
 	schema.sources.schemaOrg = EXT:rtehtmlarea/extensions/MicrodataSchema/res/schemaOrgAll.rdf
 
 	// This option doesn't exist in RTE. We use it to copy the value into the corresponding properties

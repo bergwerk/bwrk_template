@@ -2,8 +2,8 @@ page {
    headerData {
       10 = FLUIDTEMPLATE
       10 {
-         file = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Header/Icons.html
-         templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Fluid/Templates/Header/
+         file = EXT:bwrk_template/Resources/Private/Fluid/Templates/Header/Icons.html
+         templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Templates/Header/
       }
 
       20 = TEXT

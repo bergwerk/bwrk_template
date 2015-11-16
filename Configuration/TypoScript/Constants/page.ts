@@ -1,13 +1,13 @@
 page {
    fluidtemplate {
       # cat=site package: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
-      layoutRootPath = EXT:bwrk_sitepackage/Resources/Private/Layouts/Page/
+      layoutRootPath = EXT:bwrk_template/Resources/Private/Layouts/Page/
       # cat=site package: advanced/100/110; type=string; label=Partial Root Path: Path to partials
-      partialRootPath = EXT:bwrk_sitepackage/Resources/Private/Partials/Page/
+      partialRootPath = EXT:bwrk_template/Resources/Private/Partials/Page/
       # cat=site package: advanced/100/120; type=string; label=Template Root Path: Path to templates
-      templateRootPath = EXT:bwrk_sitepackage/Resources/Private/Templates/Page/
+      templateRootPath = EXT:bwrk_template/Resources/Private/Templates/Page/
       # cat=site package: advanced/100/130; type=string; label=Header Root Path: Path to templates
-      headerRootPath = EXT:bwrk_sitepackage/Resources/Private/Templates/Header/
+      headerRootPath = EXT:bwrk_template/Resources/Private/Templates/Header/
    }
 
    meta {

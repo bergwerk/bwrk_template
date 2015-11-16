@@ -126,7 +126,7 @@ plugin.tx_news {
                     maxHeight = 225
                 }
 
-                dummyImage = typo3conf/ext/bwrk_sitepackage/FileStorage/PlaceholderImages/placeholder-news.jpg
+                dummyImage = typo3conf/ext/bwrk_template/FileStorage/PlaceholderImages/placeholder-news.jpg
             }
 
             # Paginate configuration.

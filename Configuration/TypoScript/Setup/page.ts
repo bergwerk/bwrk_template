@@ -18,12 +18,12 @@ page {
    }
 
    includeCSS {
-      file1 = EXT:bwrk_sitepackage/Resources/Public/Css/app.min.css
+      file1 = EXT:bwrk_template/Resources/Public/Css/app.min.css
    }
 
 
    includeJSFooterlibs {
-      file1 = EXT:bwrk_sitepackage/Resources/Public/JavaScript/app.min.js
+      file1 = EXT:bwrk_template/Resources/Public/JavaScript/app.min.js
    }
 
    jsInline {
