@@ -40,6 +40,7 @@ page {
          contentMain < styles.content.get
          contentLeft < styles.content.getLeft
          contentRight < styles.content.getRight
+         contentBorder < styles.content.getBorder
 
          headerlogo =< lib.headerlogo
          headerlinks =< lib.headerlinks

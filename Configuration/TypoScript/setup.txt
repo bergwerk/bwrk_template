@@ -25,6 +25,7 @@
 
 ### PAGE
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/page/fluidStyledContents.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/headerData.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/fluidTemplate.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/footerData.ts">
