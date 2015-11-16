@@ -17,7 +17,7 @@
     <pagenotfound>
       <!-- the status has to meet HTTP protocol header -->
       <status>HTTP/1.0 404 Not Found</status>
-      <behavior type="userfunc">Bednarik\Cooluri\Integration\Cooluri->pageNotFound</behavior>
+      <behavior type="message"><![CDATA[ <h1>Page not found!</h1> ]]></behavior>
       <!-- possible @type values: 
         page - will show a file (loaded using file_get_contents)
         redirect - will redirect to a certaing URL
