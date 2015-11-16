@@ -31,6 +31,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/footerData.ts">
 
 ### EXTENSION
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/fluid_styled_content/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Gridelements/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Indexedsearch/setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/News/setup.ts">
