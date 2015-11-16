@@ -1,5 +1,5 @@
 {
-  "name": "bwrk_sitepackage",
+  "name": "bwrk_template",
   "version": "0.2.0",
   "devDependencies": {
     "gulp": "^3.8.11",
