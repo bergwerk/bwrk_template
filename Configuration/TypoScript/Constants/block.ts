@@ -9,4 +9,7 @@ lib {
 
    # Set Footer
    footer =
+
+   # Search Page Id
+   searchPageId = 80
 }

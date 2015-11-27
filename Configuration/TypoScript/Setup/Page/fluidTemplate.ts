@@ -44,6 +44,11 @@ page {
 
          headerlogo =< lib.headerlogo
          headerlinks =< lib.headerlinks
+         headerimages =< lib.headerimages
+
+         headerimage1 < lib.headerimages.10
+         headerimage2 < lib.headerimages.20
+         headerimage3 < lib.headerimages.30
 
          searchbox =< lib.searchbox
          languageswitch =< lib.languageswitch

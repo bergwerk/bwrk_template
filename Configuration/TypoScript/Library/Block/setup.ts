@@ -24,3 +24,21 @@ lib.footer {
    10.tables = tt_content
    10.source = {$lib.footer}
 }
+
+lib.headerimages = COA
+lib.headerimages {
+   10 = IMAGE
+   10 {
+      file {
+         import.data = levelmedia:-1, slide
+         treatIdAsReference = 1
+         import.listNum = 0
+      }
+   }
+
+   20 < .10
+   20.file.import.listNum = 1
+
+   30 < .10
+   30.file.import.listNum = 2
+}
