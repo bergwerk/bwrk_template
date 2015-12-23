@@ -2,7 +2,7 @@ $mobile-menu-width: rem-calc(260);
 $mobile-menu-speed: 300ms;
 $mobile-menu-effect: ease;
 
-.page__offcanvas-overlay {
+.offcanvas__overlay {
 	position: absolute;
 	z-index: 999;
 	width: 100%;
@@ -14,7 +14,7 @@ $mobile-menu-effect: ease;
 	@include transition(opacity $mobile-menu-speed $mobile-menu-effect);
 }
 
-.page__offcanvas {
+.offcanvas {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -32,7 +32,7 @@ $mobile-menu-effect: ease;
 		margin-bottom: rem-calc(20);
 	}
 
-	.page__offcanvas--search {
+	.offcanvas--search {
 		input, button {
 			margin: 0;
 		}
@@ -89,10 +89,10 @@ $mobile-menu-effect: ease;
 	@include transition($mobile-menu-speed $mobile-menu-effect);
 }
 
-.page__offcanvas--toggleWrapper {
+.offcanvas--toggleWrapper {
 	text-align: right;
 
-	.page__offcanvas--toggle {
+	.offcanvas--toggle {
 		font-size: 3em;
 		line-height: 1em;
 		color: $body-font-color;
@@ -103,7 +103,7 @@ $mobile-menu-effect: ease;
 	}
 }
 
-.page__offcanvas--sublinks {
+.offcanvas--sublinks {
 	position: absolute;
 	bottom: rem-calc(20);
 	left: rem-calc(20);
@@ -115,15 +115,15 @@ $mobile-menu-effect: ease;
 	}
 }
 
-body.page__offcanvas--active {
+body.offcanvas--active {
 	overflow: hidden !important;
 
-	.page__offcanvas-overlay {
+	.offcanvas__overlay {
 		height: 100%;
 		opacity: 0.5;
 	}
 
-	.page__offcanvas {
+	.offcanvas {
 		@include transform(translate(-($mobile-menu-width), rem-calc(0)));
 	}
 

@@ -3973,10 +3973,10 @@ $(document).ready(function ($)
 		offCanOptions = {
 			isLargeUp: Foundation.utils.is_large_up(),
 			content: $('.page__wrapper'),
-			menu: $('.page__offcanvas'),
-			toggle: $('.page__offcanvas--toggle'),
-			toggleClass: 'page__offcanvas--active',
-			overlay: $('.page__offcanvas-overlay')
+			menu: $('.offcanvas'),
+			toggle: $('.offcanvas--toggle'),
+			toggleClass: 'offcanvas--active',
+			overlay: $('.offcanvas__overlay')
 		};
 
 		toggleOffCanvas();
@@ -4036,7 +4036,7 @@ $(document).ready(function ($)
 
 	function initSubnavigationDropdowns()
 	{
-		var offCanvasWrapper = $('.page__offcanvas');
+		var offCanvasWrapper = $('.offcanvas');
 
 		offCanvasWrapper.find('.side-nav').each(function ()
 		{

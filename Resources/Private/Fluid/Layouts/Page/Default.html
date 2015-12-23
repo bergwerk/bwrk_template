@@ -1,4 +1,4 @@
-<div class="page__offcanvas">
+<div class="offcanvas">
     <f:render partial="offcanvas" arguments="{
 		menu_mobile:menu_mobile,
 		searchbox:searchbox,
@@ -7,36 +7,33 @@
 	}"/>
 </div>
 
-<div class="page__wrapper">
-    <div class="page__offcanvas-overlay"></div>
+<div class="page">
+    <div class="offcanvas__overlay"></div>
 
-    <div class="row">
-        <div class="columns large-12">
-            <div class="page__head page__head--desktop show-for-large-up">
-                <f:render partial="head_desktop" arguments="{
-					headerlogo:headerlogo,
-					headerlinks:headerlinks,
-					menu_main:menu_main,
-					languageswitch:languageswitch,
-					searchbox:searchbox,
-					breadcrumb:breadcrumb
-				}"/>
-            </div>
 
-            <div class="page__head page__head--mobile hide-for-large-up">
-                <f:render partial="head_mobile" arguments="{
+    <header class="page__head">
+        <div class="row">
+            <div class="column">
+                <div class="header-desktop show-for-large-up">
+                    <f:render partial="head_desktop" />
+                </div>
+
+                <div class="header-mobile hide-for-large-up">
+                    <f:render partial="head_mobile" arguments="{
 					headerlogo:headerlogo,
 					breadcrumb:breadcrumb
 				}"/>
-            </div>
-
-            <div class="page__content-wrapper">
-                <f:render section="standard"/>
-
-            </div>
-            <div class="page__footer">
-                <f:format.raw>{footer}</f:format.raw>
+                </div>
             </div>
         </div>
+    </header>
+
+    <div class="page__content">
+        <f:render section="standard"/>
     </div>
+
+
+    <footer class="page__footer">
+        <f:format.raw>{footer}</f:format.raw>
+    </footer>
 </div>

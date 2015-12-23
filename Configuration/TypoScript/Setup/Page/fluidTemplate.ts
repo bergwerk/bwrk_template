@@ -7,58 +7,72 @@ page {
          key.override.field = backend_layout
 
          default = TEXT
-         default.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/Default.html
+         default.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/default.html
 
          1 = TEXT
-         1.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/1-Column.html
+         1.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/default.html
 
          2 = TEXT
-         2.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2-Column-left.html
-
-         3 = TEXT
-         3.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2-Column-right.html
-
-         4 = TEXT
-         4.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/3-Column.html
-
+         2.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2-column.html
       }
 
       templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Fluid/Templates/Page/
       partialRootPath = EXT:bwrk_template/Resources/Private/Fluid/Partials/Page/
       layoutRootPath = EXT:bwrk_template/Resources/Private/Fluid/Layouts/Page/
-
-      variables {
-         pageTitle = TEXT
-         pageTitle.data = page:title
-
-         siteTitle = TEXT
-         siteTitle.data = TSFE:tmpl|setup|sitetitle
-
-         rootPage = TEXT
-         rootPage.data = leveluid:0
-
-         contentMain < styles.content.get
-         contentLeft < styles.content.getLeft
-         contentRight < styles.content.getRight
-         contentBorder < styles.content.getBorder
-
-         headerlogo =< lib.headerlogo
-         headerlinks =< lib.headerlinks
-         headerimages =< lib.headerimages
-
-         headerimage1 < lib.headerimages.10
-         headerimage2 < lib.headerimages.20
-         headerimage3 < lib.headerimages.30
-
-         searchbox =< lib.searchbox
-         languageswitch =< lib.languageswitch
-         breadcrumb =< lib.breadcrumb
-
-         menu_main =< lib.menu_main
-         menu_sub =< lib.menu_sub
-         menu_mobile =< lib.menu_mobile
-
-         footer =< lib.footer
-      }
    }
 }
+
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0', wrap: '<div>|</div>'}" />
+#  ---------------
+
+
+lib.dynamicContent = COA
+lib.dynamicContent {
+   5 = LOAD_REGISTER
+   5 {
+      colPos.cObject = TEXT
+      colPos.cObject {
+         field = colPos
+         ifEmpty.cObject = TEXT
+         ifEmpty.cObject {
+            value.current = 1
+            ifEmpty = 0
+         }
+      }
+      pageUid.cObject = TEXT
+      pageUid.cObject {
+         field = pageUid
+         ifEmpty.data = TSFE:id
+      }
+      contentFromPid.cObject = TEXT
+      contentFromPid.cObject {
+         data = DB:pages:{register:pageUid}:content_from_pid
+         data.insertData = 1
+      }
+      wrap.cObject = TEXT
+      wrap.cObject {
+         field = wrap
+      }
+   }
+   20 = CONTENT
+   20 {
+      table = tt_content
+      select {
+         includeRecordsWithoutDefaultTranslation = 1
+         orderBy = sorting
+         where = colPos={register:colPos}
+         where.insertData = 1
+         pidInList.data = register:pageUid
+         pidInList.override.data = register:contentFromPid
+      }
+      stdWrap {
+         dataWrap = {register:wrap}
+         required = 1
+      }
+   }
+   90 = RESTORE_REGISTER
+}
+lib.dynamicContentSlide =< lib.dynamicContent
+lib.dynamicContentSlide.20.slide = -1

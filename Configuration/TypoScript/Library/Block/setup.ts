@@ -1,44 +1,48 @@
-lib.headerlogo = COA
-lib.headerlogo {
-   10 = RECORDS
-   10 {
+lib {
+   headerlogo = RECORDS
+   headerlogo {
       tables = tt_content
       source = {$lib.headerlogo}
       dontCheckPid = 1
    }
-}
 
-lib.headerlinks = COA
-lib.headerlinks {
-   10 = RECORDS
-   10 {
+   headerlinks = RECORDS
+   headerlinks {
       tables = tt_content
       source = {$lib.headerlinks}
       dontCheckPid = 1
    }
-}
 
-lib.footer = COA
-lib.footer {
-   10 = RECORDS
-   10.tables = tt_content
-   10.source = {$lib.footer}
-}
-
-lib.headerimages = COA
-lib.headerimages {
-   10 = IMAGE
-   10 {
-      file {
-         import.data = levelmedia:-1, slide
-         treatIdAsReference = 1
-         import.listNum = 0
-      }
+   footer = RECORDS
+   footer {
+      tables = tt_content
+      source = {$lib.footer}
    }
 
-   20 < .10
-   20.file.import.listNum = 1
+   headerimages = COA
+   headerimages {
+      10 = IMAGE
+      10 {
+         file {
+            import.data = levelmedia:-1, slide
+            treatIdAsReference = 1
+            import.listNum = 0
+         }
+      }
 
-   30 < .10
-   30.file.import.listNum = 2
+      20 < .10
+      20.file.import.listNum = 1
+
+      30 < .10
+      30.file.import.listNum = 2
+   }
+
+   pageTitle = TEXT
+   pageTitle.data = page:title
+
+   siteTitle = TEXT
+   siteTitle.data = TSFE:tmpl|setup|sitetitle
+
+   rootPage = TEXT
+   rootPage.data = leveluid:0
 }

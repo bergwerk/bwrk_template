@@ -1,7 +1,10 @@
 <f:layout name="Default"/>
 
 <f:section name="standard">
-    <div class="page__content">
-        <f:render partial="content" arguments="{content:contentMain}"/>
+
+    <div class="row">
+        <div class="column">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0}" />
+        </div>
     </div>
 </f:section>
