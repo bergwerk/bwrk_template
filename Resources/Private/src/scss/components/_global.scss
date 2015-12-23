@@ -1,0 +1,4 @@
+body {
+  @include text-rendering();
+  @include text-highlighting(black, white);
+}

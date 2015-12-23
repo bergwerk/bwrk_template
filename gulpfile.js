@@ -1,6 +1,3 @@
-// Base Url
-var baseUrlJs = 'Resources/Private/Src/JavaScript/';
-
 // Gulp Modules
 var gulp = require('gulp'),
     iconfont = require('gulp-iconfont'),
@@ -12,7 +9,84 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     favicons = require('gulp-favicons');
+
+var environment = 'typo3';
+
+var config;
+
+switch (environment) {
+    case 'src-kit':
+        config = [
+            sourcePath = 'src/',
+            destinationPath = 'dist/'
+        ];
+        break;
+
+    case 'typo3':
+        config = [
+            sourcePath = 'Resourcess/Private/src/',
+            destinationPath = 'Resourcess/Public/'
+        ];
+        break;
+}
+
+var jsFilesApp = [
+
+    // Jquery
+    //sourcePath + 'bower-components/jquery/dist/jquery.min.js',
+
+    // Fastclick
+    //sourcePath + 'bower-components/fastclick/lib/fastclick.js',
+
+    // Picturefill
+    //sourcePath + 'bower-components/picturefill/dist/picturefill.js',
+
+    // SSM
+    //sourcePath + 'bower-components/SimpleStateManager/src/ssm.js',
+
+    // Slick
+    //sourcePath + 'bower-components/slick-carousel/slick/slick.min.js',
+
+    // SinglePageNav
+    //sourcePath + 'bower-components/single-page-nav/jquery.singlePageNav.js',
+    
+    // Foundation
+    // sourcePath + 'bower-components/foundation-sites/js/foundation.core.js',
+
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.core.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.box.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.keyboard.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.mediaQuery.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.motion.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.nest.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.timerAndImageLoader.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.touch.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.util.triggers.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.abide.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.accordion.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.accordionMenu.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.drilldown.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.dropdown.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.dropdownMenu.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.equalizer.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.interchange.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.magellan.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.offcanvas.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.orbit.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.responsiveMenu.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.responsiveToggle.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.reveal.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.slider.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.sticky.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.tabs.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.toggler.js',
+    //sourcePath + 'bower-components/foundation-sites/js/foundation.tooltip.js',
+
+    // Own stuff
+    sourcePath + 'js/**/*.js'
+];
 
 var defaultTasks = [
     'styles',
@@ -20,112 +94,73 @@ var defaultTasks = [
     'watch'
 ];
 
-var jsFilesApp = [
-    // Basic Libraries
-    baseUrlJs + 'libs/basic/jquery.min.js',
-    //baseUrlJs + 'libs/basic/jquery.noConflict.js',
-    baseUrlJs + 'libs/basic/modernizr.js',
-    baseUrlJs + 'libs/basic/fastclick.js',
-    baseUrlJs + 'libs/basic/ssm.js',
-
-    // Foundation Libraries
-    baseUrlJs + 'libs/foundation/foundation.js',
-    //baseUrlJs + 'libs/foundation/foundation.abide.js',
-    //baseUrlJs + 'libs/foundation/foundation.accordion.js',
-    baseUrlJs + 'libs/foundation/foundation.alert.js',
-    //baseUrlJs + 'libs/foundation/foundation.clearing.js',
-    baseUrlJs + 'libs/foundation/foundation.dropdown.js',
-    //baseUrlJs + 'libs/foundation/foundation.equalizer.js',
-    //baseUrlJs + 'libs/foundation/foundation.interchange.js',
-    //baseUrlJs + 'libs/foundation/foundation.joyride.js',
-    //baseUrlJs + 'libs/foundation/foundation.magellan.js',
-    //baseUrlJs + 'libs/foundation/foundation.offcanvas.js',
-    //baseUrlJs + 'libs/foundation/foundation.orbit.js',
-    //baseUrlJs + 'libs/foundation/foundation.reveal.js',
-    //baseUrlJs + 'libs/foundation/foundation.slider.js',
-    baseUrlJs + 'libs/foundation/foundation.tab.js',
-    baseUrlJs + 'libs/foundation/foundation.tooltip.js',
-    baseUrlJs + 'libs/foundation/foundation.topbar.js',
-
-    // Global Stuff
-    baseUrlJs + 'global/*.js',
-
-    // Custom Modules
-    baseUrlJs + 'modules/*.js'
-];
-
+gulp.task('default', defaultTasks);
+gulp.task('watch', watchTask);
 gulp.task('styles', stylesTask);
-
 gulp.task('scripts', scriptsTask);
-
 gulp.task('icons', iconsTask);
-
 gulp.task('favicon', faviconTask);
 
-gulp.task('watch', watchTask);
-
-gulp.task('default', defaultTasks);
-
 function watchTask() {
-    gulp.watch('Resources/Private/Src/Scss/**/*.scss', ['styles']);
+    gulp.watch(sourcePath + 'scss/**/*.scss', ['styles']);
     gulp.watch(jsFilesApp, ['scripts']);
 }
 
-function iconsTask() {
-    gulp.src(['Resources/Private/Assets/Svg/*.svg'])
-        .pipe(iconfont({
-            fontName: 'icon',
-            appendCodepoints: true
-        }))
-        .on('codepoints', function (codepoints, options) {
-            gulp.src('Resources/Private/Src/Scss/template/icons.scss')
-                .pipe(consolidate('lodash', {
-                    glyphs: codepoints,
-                    fontName: 'icon',
-                    fontPath: '../Fonts/generated/',
-                    className: 'icon'
-                }))
-                .pipe(gulp.dest('Resources/Private/Src/Scss/generated'));
-        })
-        .pipe(gulp.dest('Resources/Public/Fonts/generated'));
-}
-
 function stylesTask() {
-    var compileStyles = function (_baseName) {
-        gulp.src(['Resources/Private/Src/Scss/' + _baseName + '.scss'])
+    var compileStyles = function (baseName) {
+        gulp.src([sourcePath + 'scss/' + baseName + '.scss'])
             .pipe(plumber())
-            .pipe(sass({outputStyle: 'expanded'}))
-            .pipe(gulp.dest('Resources/Public/Css'))
-            .pipe(rename({suffix: '.min'}))
+            .pipe(sourcemaps.init())
             .pipe(sass({outputStyle: 'compressed'}))
-            .pipe(gulp.dest('Resources/Public/Css'));
+            .pipe(rename({suffix: '.min'}))
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest(destinationPath + 'css'))
     };
 
     compileStyles('app');
-    compileStyles('print');
-    compileStyles('rte_css');
 }
 
 function scriptsTask() {
     var compileScripts = function (files, targetFile) {
         gulp.src(files)
             .pipe(plumber())
+            .pipe(sourcemaps.init())
             .pipe(concat(targetFile + '.js'))
-            .pipe(gulp.dest('Resources/Public/JavaScript'))
             .pipe(uglify())
             .pipe(rename({suffix: '.min'}))
-            .pipe(gulp.dest('Resources/Public/JavaScript'));
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest(destinationPath + 'js'));
     };
 
     compileScripts(jsFilesApp, 'app');
 }
 
+function iconsTask() {
+    gulp.src([sourcePath + 'assets/svg/use/*.svg'])
+        .pipe(iconfont({
+            fontName: 'icon',
+            appendCodepoints: true
+        }))
+        .on('codepoints', function (codepoints, options) {
+            gulp.src(sourcePath + 'scss/templates/_icons.scss')
+                .pipe(consolidate('lodash', {
+                    glyphs: codepoints,
+                    fontName: 'icon',
+                    fontPath: '..fonts/generated/',
+                    className: 'icon'
+                }))
+                .pipe(gulp.dest(sourcePath + 'scss/generated'));
+        })
+        .pipe(gulp.dest(destinationPath + 'fonts/generated'));
+}
+
+
 function faviconTask() {
-    gulp.src(['Resources/Private/Assets/Icons/faviconTask.png'])
+    gulp.src([sourcePath + 'assets/favicon/favicon.png'])
         .pipe(favicons({
             files: {
-                src: 'Resources/Private/Assets/Icons/faviconTask.png',
-                dest: 'Resources/Public/Icons',
+                src: sourcePath + 'assets/favicon/favicon.png',
+                dest: destinationPath + 'assets/favicon',
                 iconsPath: '/Icons/',
                 html: '/dev/null'
             },
@@ -146,6 +181,5 @@ function faviconTask() {
                 background: false
             }
         }))
-        .pipe(gulp.dest('Resources/Public/Icons'));
+        .pipe(gulp.dest(destinationPath + 'assets/favicon'));
 }
-
