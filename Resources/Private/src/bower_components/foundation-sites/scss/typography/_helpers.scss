@@ -54,13 +54,13 @@ $stat-font-size: 2.5rem !default;
   }
 
   // Use to style an introductory lead, deck, blurb, etc.
-  .lead {
-    font-size: $lead-font-size;
-    line-height: $lead-lineheight;
-  }
+    .lead {
+      font-size: $lead-font-size;
+      line-height: $lead-lineheight;
+    }
 
-  // Use to style a large number to display a statistic
-  .stat {
+    // Use to style a large number to display a statistic
+    .stat {
     font-size: $stat-font-size;
     line-height: 1;
 
