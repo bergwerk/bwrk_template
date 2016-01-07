@@ -1,0 +1,1 @@
+{"version":3,"sources":["print.scss"],"names":[],"mappings":"AAAA,IAAI,AAAC,CACH,gBAAgB,CAAE,KAAM,CACzB","file":"print.min.css","sourcesContent":["body {\n  background-color: green;\n}"],"sourceRoot":"/source/"}

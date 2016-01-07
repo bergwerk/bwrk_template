@@ -16,19 +16,21 @@ lib.menu_main {
             ACT.ATagTitle.field = abstract // description // title
 
             IFSUB = 1
-            IFSUB.wrapItemAndSub = <li class="has-dropdown">|</li>
+            IFSUB.wrapItemAndSub = <li>|</li>
             IFSUB.ATagTitle.field = abstract // description // title
-            IFSUB.ATagParams = class="dropdown-toggle" data-toggle="dropdown"
 
             ACTIFSUB = 1
-            ACTIFSUB.wrapItemAndSub = <li class="has-dropdown active">|</li>
+            ACTIFSUB.wrapItemAndSub = <li class="active">|</li>
             ACTIFSUB.ATagTitle.field = abstract // description // title
-            ACTIFSUB.ATagParams = class="dropdown-toggle" data-toggle="dropdown"
+        }
+
+        1 {
+            wrap = <ul class="dropdown menu" data-dropdown-menu>|</ul>
         }
 
         2 < .1
         2 {
-            wrap = <ul class="dropdown">|</ul>
+            wrap = <ul class="menu">|</ul>
         }
         3 < .2
         4 < .3

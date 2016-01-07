@@ -6,14 +6,6 @@ page {
          templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Templates/Header/
       }
 
-      20 = TEXT
-      20.value (
-         <!--[if lt IE 9]>
-           <script src="fileadmin/templates/default/js/html5shiv.js"></script>
-           <script src="fileadmin/templates/default/js/respond.js"></script>
-         <![endif]-->
-      )
-
       15 >
       15 = COA
       15 {
