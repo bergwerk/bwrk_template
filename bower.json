@@ -21,7 +21,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "foundation-sites": "~6.1.0"
+  "devDependencies": {
+    "foundation-sites": "latest"
   }
 }
