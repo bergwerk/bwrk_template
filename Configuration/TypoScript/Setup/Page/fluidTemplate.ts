@@ -30,6 +30,7 @@ page {
 
 lib.dynamicContent = COA
 lib.dynamicContent {
+
    5 = LOAD_REGISTER
    5 {
       colPos.cObject = TEXT

@@ -1,5 +1,6 @@
 ### Dependencies
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
 
 ### CONFIG
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Constants/config.ts">

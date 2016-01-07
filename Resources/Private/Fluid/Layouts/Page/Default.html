@@ -1,15 +1,4 @@
-<div class="offcanvas">
-    <f:render partial="offcanvas" arguments="{
-		menu_mobile:menu_mobile,
-		searchbox:searchbox,
-		headerlinks:headerlinks,
-		languageswitch: languageswitch
-	}"/>
-</div>
-
 <div class="page">
-    <div class="offcanvas__overlay"></div>
-
     <header class="page__head">
         <f:render partial="header_default" />
     </header>
@@ -19,6 +8,6 @@
     </div>
 
     <footer class="page__footer">
-        <f:format.raw>{footer}</f:format.raw>
+        <f:cObject typoscriptObjectPath="lib.footer"/>
     </footer>
 </div>

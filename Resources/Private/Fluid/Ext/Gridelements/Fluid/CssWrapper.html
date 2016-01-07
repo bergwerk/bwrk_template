@@ -1,0 +1,8 @@
+<f:switch expression="{data.flexform_css_style}">
+    <f:case value="1">
+        <div class="row{f:if(condition: '{data.flexform_css_class}', then: ' {data.flexform_css_class}')}">
+            <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
+        </div>
+    </f:case>
+</f:switch>
+
