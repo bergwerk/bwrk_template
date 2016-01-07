@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     favicons = require('gulp-favicons');
 
-var environment = 'src-kit';
+var environment = 'typo3';
 
 var config;
 

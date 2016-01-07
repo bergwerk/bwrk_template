@@ -2,7 +2,9 @@
 
 @import "settings";
 
-@import "utilityity/utility";
+@include foundation-everything();
+
+@import "utility/utility";
 @import "generated/generated";
 @import "typography/typography";
 @import "components/components";
