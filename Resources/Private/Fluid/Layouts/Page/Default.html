@@ -10,22 +10,17 @@
 <div class="page">
     <div class="offcanvas__overlay"></div>
 
-
     <header class="page__head">
-        <div class="row">
-            <div class="column">
-                <div class="header-desktop show-for-large-up">
-                    <f:render partial="head_desktop" />
-                </div>
 
-                <div class="header-mobile hide-for-large-up">
-                    <f:render partial="head_mobile" arguments="{
-					headerlogo:headerlogo,
-					breadcrumb:breadcrumb
-				}"/>
-                </div>
-            </div>
+        <div class="header-desktop show-for-large-up">
+            <f:render partial="head_desktop" />
         </div>
+
+        <div class="header-mobile hide-for-large-up">
+            <f:render partial="head_mobile" />
+        </div>
+
+
     </header>
 
     <div class="page__content">

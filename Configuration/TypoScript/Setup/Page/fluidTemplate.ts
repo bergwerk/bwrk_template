@@ -56,6 +56,7 @@ lib.dynamicContent {
          field = wrap
       }
    }
+
    20 = CONTENT
    20 {
       table = tt_content
