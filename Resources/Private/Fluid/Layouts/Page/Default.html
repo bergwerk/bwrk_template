@@ -11,22 +11,12 @@
     <div class="offcanvas__overlay"></div>
 
     <header class="page__head">
-
-        <div class="header-desktop show-for-large-up">
-            <f:render partial="head_desktop" />
-        </div>
-
-        <div class="header-mobile hide-for-large-up">
-            <f:render partial="head_mobile" />
-        </div>
-
-
+        <f:render partial="header_default" />
     </header>
 
     <div class="page__content">
         <f:render section="standard"/>
     </div>
-
 
     <footer class="page__footer">
         <f:format.raw>{footer}</f:format.raw>
