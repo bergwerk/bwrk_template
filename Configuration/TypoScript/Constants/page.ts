@@ -11,27 +11,29 @@ page {
    }
 
    meta {
-      # cat=site package: basic/110/100; type=string; label=Description: Enter a short description of the page. It will be displayed in the result lists of most search engines.
+      # cat=bootstrap package: basic/120/100; type=string; label=Description: Enter a short description of the page. It will be displayed in the result lists of most search engines.
       description =
-      # cat=site package: basic/110/110; type=string; label=Author: Enter the page author's name.
+      # cat=bootstrap package: basic/120/110; type=string; label=Author: Enter the page author's name.
       author =
-      # cat=site package: basic/110/120; type=string; label=Keywords: Enter keywords for the page separated by commas. You may also use short phrases.
+      # cat=bootstrap package: basic/120/120; type=string; label=Keywords: Enter keywords for the page separated by commas. You may also use short phrases.
       keywords =
-      # cat=site package: advanced/110/100; type=string; label=viewport
+      # cat=bootstrap package: advanced/120/100; type=string; label=viewport
       viewport = width=device-width, initial-scale=1
-      # cat=site package: advanced/110/110; type=string; label=robots
+      # cat=bootstrap package: advanced/120/110; type=string; label=robots
       robots = index,follow
-      # cat=site package: advanced/110/120; type=string; label=apple-mobile-web-app-capable
+      # cat=bootstrap package: advanced/120/120; type=string; label=apple-mobile-web-app-capable
       apple-mobile-web-app-capable = no
-      # cat=site package: advanced/110/130; type=string; label=google
+      # cat=bootstrap package: advanced/120/130; type=string; label=compatible
+      compatible = IE=edge
+      # cat=bootstrap package: advanced/120/140; type=string; label=google
       google = notranslate
    }
 
    tracking {
       google {
-         # cat=site package: basic/120/100; type=string; label=Google: Tracking-ID
+         # cat=bootstrap package: basic/180/100; type=string; label=Google: Tracking-ID
          trackingID =
-         # cat=site package: basic/120/110; type=boolean; label=Google: IP-anonymisation
+         # cat=bootstrap package: basic/180/110; type=boolean; label=Google: IP-anonymisation
          anonymizeIp = 1
       }
    }
