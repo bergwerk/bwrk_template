@@ -9,13 +9,15 @@ page {
          default = TEXT
          default.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/default.html
 
-         2Columns = TEXT
-         2Columns.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2-column.html
+         pagets__2Columns = TEXT
+         pagets__2Columns.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2Columns.html
       }
 
       templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Fluid/Templates/Page/
       partialRootPath = EXT:bwrk_template/Resources/Private/Fluid/Partials/Page/
       layoutRootPath = EXT:bwrk_template/Resources/Private/Fluid/Layouts/Page/
+
+
    }
 }
 
