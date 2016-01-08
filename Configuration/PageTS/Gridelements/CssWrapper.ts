@@ -3,7 +3,7 @@ tx_gridelements.setup {
         title = CSS Wrapper
         description = umschließt den Inhalt mit einer speziellen CSS Klasse
         flexformDS = FILE:EXT:bwrk_template/Configuration/FlexForm/Gridelements/CssWrapper.xml
-        icon = ../typo3conf/ext/bwrk_template/Resources/Public/Icons/Gridelements/CssWrapper.svg
+        icon = EXT:bwrk_template/Resources/Public/Icons/Gridelements/CssWrapper.svg
         config {
             colCount = 1
             rowCount = 1

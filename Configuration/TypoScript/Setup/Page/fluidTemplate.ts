@@ -9,11 +9,8 @@ page {
          default = TEXT
          default.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/default.html
 
-         1 = TEXT
-         1.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/default.html
-
-         2 = TEXT
-         2.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2-column.html
+         2Columns = TEXT
+         2Columns.value = EXT:bwrk_template/Resources/Private/Fluid/Templates/Page/2-column.html
       }
 
       templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Fluid/Templates/Page/

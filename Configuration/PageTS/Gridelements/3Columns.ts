@@ -3,7 +3,7 @@ tx_gridelements.setup {
         title = 3 Spalten
         description = 3 spaltiges Inhaltselement
         flexformDS = FILE:EXT:bwrk_template/Configuration/FlexForm/Gridelements/3Columns.xml
-        icon = ../typo3conf/ext/bwrk_template/Resources/Public/Icons/Gridelements/3Columns.svg
+        icon = EXT:bwrk_template/Resources/Public/Icons/Gridelements/3Columns.svg
         config {
             colCount = 3
             rowCount = 1
