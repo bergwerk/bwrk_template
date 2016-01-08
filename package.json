@@ -1,22 +1,15 @@
 {
-  "name": "src-kit",
-  "version": "1.0.0",
-  "description": "src-kit is a frontend devkit",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/marvinhuebner/src-kit"
-  },
+  "name": "bwrk_teamplate",
+  "version": "2.2.0",
+  "description": "bwrk_template is a basic typo3 template",
   "keywords": [
     "frontend",
     "devkit",
-    "scss",
-    "js"
+    "typo3"
   ],
   "author": {
-    "name": "Marvin Hübner <marvin@marvinhuebner.com>"
+    "name": "BERGWERK <technik@bergwerk.ag>"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/marvinhuebner/src-kit/blob/master/LICENSE",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^1.0.1",
