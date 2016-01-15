@@ -143,10 +143,10 @@ function iconsTask() {
             fontName: 'icon',
             appendCodepoints: true
         }))
-        .on('codepoints', function (codepoints, options) {
+        .on('glyphs', function (glyphs, options) {
             gulp.src(sourcePath + 'scss/templates/_icons.scss')
                 .pipe(consolidate('lodash', {
-                    glyphs: codepoints,
+                    glyphs: glyphs,
                     fontName: 'icon',
                     fontPath: '..fonts/generated/',
                     className: 'icon'

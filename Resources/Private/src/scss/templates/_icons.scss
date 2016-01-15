@@ -38,10 +38,10 @@
   text-align: center;
 }
 
-<% _.each(glyphs, function(glyph) { %>@mixin <%= className %>_<%= glyph.name %>() {&:before { content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>" }}
+<% _.each(glyphs, function(glyph) { %>@mixin <%= className %>_<%= glyph.name %>() {&:before { content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>" }}
 <% }); %>
 
-<% _.each(glyphs, function(glyph) { %>@mixin <%= className %>_<%= glyph.name %>-after() {&:after { content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>" }}
+<% _.each(glyphs, function(glyph) { %>@mixin <%= className %>_<%= glyph.name %>-after() {&:after { content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>" }}
 <% }); %>
 
 <% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %> { @include <%= className %>_<%= glyph.name %>(); }
