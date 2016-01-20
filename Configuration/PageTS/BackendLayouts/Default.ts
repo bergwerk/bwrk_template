@@ -19,7 +19,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:bwrk_template/Resources/Public/Icons/backendlayouts/default.gif
+                icon = EXT:bwrk_template/Resources/Public/icons/backendlayouts/default.gif
             }
         }
     }

@@ -24,7 +24,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:bwrk_template/Resources/Public/Icons/backendlayouts/2Columns.gif
+                icon = EXT:bwrk_template/Resources/Public/icons/backendlayouts/2Columns.gif
             }
         }
     }
