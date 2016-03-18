@@ -30,6 +30,7 @@ config {
    intTarget =
    extTarget =
    noPageTitle = 1
+   contentObjectExceptionHandler = 0
 
    // Enable Cool URI
    tx_cooluri_enable = 1
