@@ -1,27 +1,27 @@
 @font-face {
   font-family: "icon";
-  src: url('dist/fonts/generated/icon.eot');
-  src: url('dist/fonts/generated/icon.eot?#iefix') format('eot'),
-    url('dist/fonts/generated/icon.woff') format('woff'),
-    url('dist/fonts/generated/icon.ttf') format('truetype'),
-    url('dist/fonts/generated/icon.svg#icon') format('svg');
+  src: url('../fonts/generated/icon.eot');
+  src: url('../fonts/generated/icon.eot?#iefix') format('eot'),
+  url('../fonts/generated/icon.woff') format('woff'),
+  url('../fonts/generated/icon.ttf') format('truetype'),
+  url('../fonts/generated/icon.svg#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 .icon {
-   font-family:"icon";
-   display:inline-block;
-   vertical-align:middle;
-   line-height:1;
-   font-weight:normal;
-   font-style:normal;
-   speak:none;
-   text-decoration:inherit;
-   text-transform:none;
-   text-rendering:optimizeLegibility;
-   -webkit-font-smoothing:antialiased;
-   -moz-osx-font-smoothing:grayscale;
+  font-family:"icon";
+  display:inline-block;
+  vertical-align:middle;
+  line-height:1;
+  font-weight:normal;
+  font-style:normal;
+  speak:none;
+  text-decoration:inherit;
+  text-transform:none;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
 .icon-lg {
@@ -38,13 +38,8 @@
   text-align: center;
 }
 
-@mixin icon_apple() {&:before { content: "\E001" }}
-
-
-@mixin icon_apple-after() {&:after { content: "\E001" }}
-
+@mixin icon_apple() {&:before { content: "\EA01" }}
+@mixin icon_apple-after() {&:after { content: "\EA01" }}
 
 .icon-apple { @include icon_apple(); }
-
-
 .icon-apple-after { @include icon_apple-after(); }

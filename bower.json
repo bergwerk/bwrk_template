@@ -1,6 +1,6 @@
 {
-  "name": "bwrk_template",
-  "description": "bwrk_template is a basic typo3 template",
+  "name": "src-kit",
+  "description": "src-kit is a frontend devkit",
   "authors": [
     "Marvin Huebner"
   ],
@@ -9,8 +9,10 @@
   "keywords": [
     "frontend",
     "devkit",
-    "typo3"
+    "scss",
+    "js"
   ],
+  "homepage": "https://github.com/marvinhuebner/src-kit",
   "ignore": [
     "**/.*",
     "node_modules",
