@@ -74,15 +74,15 @@ page {
 
 
     includeCSS {
-        file1 = EXT:bwrk_template/Resources/Public/css/app.min.css
+        file1 = EXT:bwrk_template/Resources/Public/css/app.css
         file1.media = all
 
-        file2 = EXT:bwrk_template/Resources/Public/css/print.min.css
+        file2 = EXT:bwrk_template/Resources/Public/css/print.css
         file2.media = print
     }
 
     includeJSFooterlibs {
-        file1 = EXT:bwrk_template/Resources/Public/js/app.min.js
+        file1 = EXT:bwrk_template/Resources/Public/js/app.js
     }
 
     jsFooterInline {
