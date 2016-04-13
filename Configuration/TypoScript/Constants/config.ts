@@ -2,7 +2,7 @@ config {
    # Set the Base URL
    baseURL =
    # cat=site package: advanced/130/110; type=boolean; label=No Cache
-   no_cache = 0
+   no_cache = 1
    # cat=site package: advanced/130/120; type=options[Do not remove=0,Remove=1,Move to external file=external]; label=Remove default JavaScript
    removeDefaultJS = 0
    # cat=site package: advanced/130/130; type=options[Do not remove=0,Move to external file=1]; label=Move styles controlled by TYPO3 Core to external file

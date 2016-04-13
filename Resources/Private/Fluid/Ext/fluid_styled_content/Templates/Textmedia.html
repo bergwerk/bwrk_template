@@ -17,7 +17,7 @@
             <f:if condition="{gallery.position.noWrap}">
                 <f:render partial="Header" arguments="{_all}"/>
             </f:if>
-            <f:format.raw>{data.bodytext}</f:format.raw>
+            <f:format.html>{data.bodytext}</f:format.html>
         </div>
 
         <f:if condition="{gallery.position.vertical} == 'below'">
