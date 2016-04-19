@@ -40,7 +40,7 @@ RTE.default {
 
 	// Use delivered rte css file that includes a default bootstrap css file.
 	// This css file is only for backend purposes and not used in frontend anyways!
-	contentCSS = EXT:bwrk_template/Resources/Public/css/rte.min.css
+	contentCSS = EXT:bwrk_template/Resources/Public/css/rte.css
 
 	// Use default schema for microdata
 	schema.sources {
