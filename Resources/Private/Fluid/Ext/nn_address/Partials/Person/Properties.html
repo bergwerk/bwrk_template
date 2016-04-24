@@ -1,199 +1,199 @@
 <table class="tx-nn-address">
 
-    <f:if condition="{person.image}">
-        <tr>
-            <td>&nbsp;</td>
-            <td>
-                <f:if condition="{person.image}">
-                    <f:image src="uploads/tx_nnaddress/{person.image}" width="100c" height="140c" alt=""/>
-                </f:if>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.image}">
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<f:if condition="{person.image}">
+					<f:image src="uploads/tx_nnaddress/{person.image}" width="100c" height="140c" alt=""/>
+				</f:if>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.gender}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.gender"/>
-            </td>
-            <td>
-                <f:translate
-                        key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_person.xlf:gender.{person.gender}"/>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.gender}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.gender"/>
+			</td>
+			<td>
+				<f:translate
+					key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_person.xlf:gender.{person.gender}"/>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.title}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.title"/>
-            </td>
-            <td>
-                {person.title}
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.title}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.title"/>
+			</td>
+			<td>
+				{person.title}
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.firstName}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.first_name"/>
-            </td>
-            <td>
-                {person.firstName}
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.firstName}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.first_name"/>
+			</td>
+			<td>
+				{person.firstName}
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.secondFirstName}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.second_first_name"/>
-            </td>
-            <td>
-                {person.secondFirstName}
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.secondFirstName}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.second_first_name"/>
+			</td>
+			<td>
+				{person.secondFirstName}
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.lastName}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.last_name"/>
-            </td>
-            <td>
-                {person.lastName}
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.lastName}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.last_name"/>
+			</td>
+			<td>
+				{person.lastName}
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.organisation}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.organisation"/>
-            </td>
-            <td>
-                {person.organisation}
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.organisation}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.organisation"/>
+			</td>
+			<td>
+				{person.organisation}
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.birthday}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.birthday"/>
-            </td>
-            <td>
-                {person.birthday -> f:format.date(format:'d.m.Y')}
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.birthday}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.birthday"/>
+			</td>
+			<td>
+				{person.birthday -> f:format.date(format:'d.m.Y')}
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.notes}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.notes"/>
-            </td>
-            <td>
-                <f:format.nl2br>{person.notes}</f:format.nl2br>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.notes}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.notes"/>
+			</td>
+			<td>
+				<f:format.nl2br>{person.notes}</f:format.nl2br>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.addresses}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.addresses"/>
-            </td>
-            <td>
-                <f:for each="{person.addresses}" as="address">
-                    <f:format.raw>
+	<f:if condition="{person.addresses}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.addresses"/>
+			</td>
+			<td>
+				<f:for each="{person.addresses}" as="address">
+					<f:format.raw>
 
-                        <div class="addressBlock">
-                            <div class="addressText">
-                                <strong>
-                                    <f:translate
-                                            key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_address.xlf:type.{address.type}"/>
-                                </strong><br/>
-                                {address.street} {address.streetNr}<br/>
-                                {address.zip} {address.city}
-                            </div>
+						<div class="addressBlock">
+							<div class="addressText">
+								<strong>
+									<f:translate
+										key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_address.xlf:type.{address.type}"/>
+								</strong><br/>
+								{address.street} {address.streetNr}<br/>
+								{address.zip} {address.city}
+							</div>
 
-                            <div class="addressMap">
-                                <f:cObject typoscriptObjectPath="lib.nnAddressMap"
-                                           data="{address.street} {address.streetNr},{address.city}"/>
-                            </div>
-                        </div>
+							<div class="addressMap">
+								<f:cObject typoscriptObjectPath="lib.nnAddressMap"
+													 data="{address.street} {address.streetNr},{address.city}"/>
+							</div>
+						</div>
 
-                    </f:format.raw>
-                </f:for>
-            </td>
-        </tr>
-    </f:if>
+					</f:format.raw>
+				</f:for>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.phones}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.phones"/>
-            </td>
-            <td>
-                <f:for each="{person.phones}" as="phone">
-                    <f:format.raw>
-                        <strong>
-                            <f:translate
-                                    key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_phone.xlf:type.{phone.type}"/>
-                        </strong><br/>
-                        {phone.number}<br/>
-                        <br/>
-                    </f:format.raw>
-                </f:for>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.phones}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.phones"/>
+			</td>
+			<td>
+				<f:for each="{person.phones}" as="phone">
+					<f:format.raw>
+						<strong>
+							<f:translate
+								key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_phone.xlf:type.{phone.type}"/>
+						</strong><br/>
+						{phone.number}<br/>
+						<br/>
+					</f:format.raw>
+				</f:for>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.mails}">
-        <tr>
-            <td>
-                <f:translate key="tx_nnaddress_domain_model_person.mails"/>
-            </td>
-            <td>
-                <f:for each="{person.mails}" as="mail">
-                    <f:format.raw>
-                        <strong>
-                            <f:translate
-                                    key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_mail.xlf:type.{mail.type}"/>
-                        </strong><br/>
-                        <f:link.email email="{mail.email}">{mail.email}</f:link.email>
-                        <br/>
-                        <br/>
-                    </f:format.raw>
-                </f:for>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.mails}">
+		<tr>
+			<td>
+				<f:translate key="tx_nnaddress_domain_model_person.mails"/>
+			</td>
+			<td>
+				<f:for each="{person.mails}" as="mail">
+					<f:format.raw>
+						<strong>
+							<f:translate
+								key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_mail.xlf:type.{mail.type}"/>
+						</strong><br/>
+						<f:link.email email="{mail.email}">{mail.email}</f:link.email>
+						<br/>
+						<br/>
+					</f:format.raw>
+				</f:for>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.flexform.description}">
-        <tr>
-            <td>
-                <f:translate
-                        key="LLL:EXT:nn_address/Resources/Private/Language/locallang_db.xlf:tx_nnaddress_flexForm_description"/>
-            </td>
-            <td>
-                <f:format.nl2br>{person.flexform.description}</f:format.nl2br>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.flexform.description}">
+		<tr>
+			<td>
+				<f:translate
+					key="LLL:EXT:nn_address/Resources/Private/Language/locallang_db.xlf:tx_nnaddress_flexForm_description"/>
+			</td>
+			<td>
+				<f:format.nl2br>{person.flexform.description}</f:format.nl2br>
+			</td>
+		</tr>
+	</f:if>
 
-    <f:if condition="{person.flexform.associatedPersons}">
-        <tr>
-            <td>
-                <f:translate
-                        key="LLL:EXT:nn_address/Resources/Private/Language/locallang_db.xlf:tx_nnaddress_flexForm_associated"/>
-            </td>
-            <td>
-                <f:cObject typoscriptObjectPath="lib.nnAddressAssociated"
-                           data="{uidList:'{person.flexform.associatedPersons}'}"/>
-            </td>
-        </tr>
-    </f:if>
+	<f:if condition="{person.flexform.associatedPersons}">
+		<tr>
+			<td>
+				<f:translate
+					key="LLL:EXT:nn_address/Resources/Private/Language/locallang_db.xlf:tx_nnaddress_flexForm_associated"/>
+			</td>
+			<td>
+				<f:cObject typoscriptObjectPath="lib.nnAddressAssociated"
+									 data="{uidList:'{person.flexform.associatedPersons}'}"/>
+			</td>
+		</tr>
+	</f:if>
 </table>

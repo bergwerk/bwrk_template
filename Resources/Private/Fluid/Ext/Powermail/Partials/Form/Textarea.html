@@ -2,20 +2,20 @@
 
 
 <div id="fieldwrap_{field.uid}"
-     class="powermail_{field.type} {field.css} {vh:Validation.ErrorClass(field:field, class:'has-error has-feedback')}">
+		 class="powermail_{field.type} {field.css} {vh:Validation.ErrorClass(field:field, class:'has-error has-feedback')}">
 
-    <label for="field_{field.marker}" class="control-label" title="{field.description}">
-        <vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss>
-        <f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
-    </label>
+	<label for="field_{field.marker}" class="control-label" title="{field.description}">
+		<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss>
+		<f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+	</label>
 
-    <f:form.textarea
-            cols="20"
-            rows="5"
-            id="field_{field.marker}"
-            property="{field.marker}"
-            placeholder="{field.placeholder}"
-            value="{vh:Misc.PrefillField(field:field, mail:mail)}"
-            additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
-            />
+	<f:form.textarea
+		cols="20"
+		rows="5"
+		id="field_{field.marker}"
+		property="{field.marker}"
+		placeholder="{field.placeholder}"
+		value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+		additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field)}"
+	/>
 </div>

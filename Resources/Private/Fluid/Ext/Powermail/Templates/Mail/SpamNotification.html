@@ -9,14 +9,14 @@ Render Powermail Spam notification mail to administration
 {ipAddress}                                IP Address from sender (if not disabled)
 
 <f:section name="main">
-    Possible spam in powermail form on page with PID {pid}
-    Spamfactor of this mail: {calculatedMailSpamFactor}
+	Possible spam in powermail form on page with PID {pid}
+	Spamfactor of this mail: {calculatedMailSpamFactor}
 
-    Failed Spamchecks:
-    <f:for each="{messages}" as="message">{message}
-    </f:for>
-    Given Form variables:
-    <f:for each="{mail.answers}" as="answer">{answer.field.title}: {answer.value}
-    </f:for>
-    <f:if condition="{ipAddress}">Senders IP addess: {ipAddress}</f:if>
+	Failed Spamchecks:
+	<f:for each="{messages}" as="message">{message}
+	</f:for>
+	Given Form variables:
+	<f:for each="{mail.answers}" as="answer">{answer.field.title}: {answer.value}
+	</f:for>
+	<f:if condition="{ipAddress}">Senders IP addess: {ipAddress}</f:if>
 </f:section>

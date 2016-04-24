@@ -2,66 +2,66 @@
 <f:layout name="List"/>
 <f:section name="main">
 
-    <f:if condition="{settings.enableSearch}">
-        <f:if condition="{settings.groupSearchTypeAnd}">
-            <f:then>
-                <f:render partial="Search/FormAnd"
-                          arguments="{sword:sword,groups:groups,selectedGroups:selectedGroups}"/>
-            </f:then>
-            <f:else>
-                <f:render partial="Search/Form"
-                          arguments="{sword:sword,groups:groups,selectedGroup:selectedGroup,groupHierachy:groupHierachy}"/>
-            </f:else>
-        </f:if>
-    </f:if>
+	<f:if condition="{settings.enableSearch}">
+		<f:if condition="{settings.groupSearchTypeAnd}">
+			<f:then>
+				<f:render partial="Search/FormAnd"
+									arguments="{sword:sword,groups:groups,selectedGroups:selectedGroups}"/>
+			</f:then>
+			<f:else>
+				<f:render partial="Search/Form"
+									arguments="{sword:sword,groups:groups,selectedGroup:selectedGroup,groupHierachy:groupHierachy}"/>
+			</f:else>
+		</f:if>
+	</f:if>
 
-    <nn:widget.paginate objects="{persons}" as="paginatedPersons" configuration="{itemsPerPage:settings.itemsPerPage}">
+	<nn:widget.paginate objects="{persons}" as="paginatedPersons" configuration="{itemsPerPage:settings.itemsPerPage}">
 
-        <table class="tx_nnaddress">
-            <tr class="orderby_{orderby}">
-                <th class="lastName order_{order}">
-                    <f:link.action arguments="{orderArgsName}">
-                        <f:translate key="tx_nnaddress_domain_model_person.last_name"/>
-                    </f:link.action>
-                </th>
-                <th class="organisation order_{order}">
-                    <f:link.action arguments="{orderArgsOrga}">
-                        <f:translate key="tx_nnaddress_domain_model_person.organisation"/>
-                    </f:link.action>
-                </th>
-                <th>
-                    <f:translate key="tx_nnaddress_domain_model_phone.number"/>
-                </th>
-            </tr>
+		<table class="tx_nnaddress">
+			<tr class="orderby_{orderby}">
+				<th class="lastName order_{order}">
+					<f:link.action arguments="{orderArgsName}">
+						<f:translate key="tx_nnaddress_domain_model_person.last_name"/>
+					</f:link.action>
+				</th>
+				<th class="organisation order_{order}">
+					<f:link.action arguments="{orderArgsOrga}">
+						<f:translate key="tx_nnaddress_domain_model_person.organisation"/>
+					</f:link.action>
+				</th>
+				<th>
+					<f:translate key="tx_nnaddress_domain_model_phone.number"/>
+				</th>
+			</tr>
 
-            <f:for each="{paginatedPersons}" as="person" iteration="i">
-                <tr class="{f:if(condition: '{i.isEven}', then: 'even', else: 'odd')}">
-                    <td>
-                        <f:link.action arguments="{person : person}">
-                            <f:translate
-                                    key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_person.xlf:gender.{person.gender}"/>
-                            {person.title}
-                            {person.firstName} {person.lastName}
-                        </f:link.action>
-                    </td>
-                    <td>{person.organisation}</td>
-                    <td>
-                        <f:comment>
-                            Example on using the NN Viewhelper to get a specific entry by type field.
-                            In this case get only the WORK Phone number.
+			<f:for each="{paginatedPersons}" as="person" iteration="i">
+				<tr class="{f:if(condition: '{i.isEven}', then: 'even', else: 'odd')}">
+					<td>
+						<f:link.action arguments="{person : person}">
+							<f:translate
+								key="LLL:EXT:nn_address/Resources/Private/Language/locallang_csh_tx_nnaddress_domain_model_person.xlf:gender.{person.gender}"/>
+							{person.title}
+							{person.firstName} {person.lastName}
+						</f:link.action>
+					</td>
+					<td>{person.organisation}</td>
+					<td>
+						<f:comment>
+							Example on using the NN Viewhelper to get a specific entry by type field.
+							In this case get only the WORK Phone number.
 
-                            Other view helper examples, like only get the first (ordered by sorting) entry found in
-                            /Resources/Private/ContentDesigner/ templates
-                        </f:comment>
-                        <f:alias
-                                map="{phone: '{person.phones -> nn:iterator.getByProperty(property:\'type\',value:1)}'}">
-                            {phone.number}
-                        </f:alias>
-                    </td>
-                </tr>
-            </f:for>
-        </table>
+							Other view helper examples, like only get the first (ordered by sorting) entry found in
+							/Resources/Private/ContentDesigner/ templates
+						</f:comment>
+						<f:alias
+							map="{phone: '{person.phones -> nn:iterator.getByProperty(property:\'type\',value:1)}'}">
+							{phone.number}
+						</f:alias>
+					</td>
+				</tr>
+			</f:for>
+		</table>
 
-    </nn:widget.paginate>
+	</nn:widget.paginate>
 
 </f:section>

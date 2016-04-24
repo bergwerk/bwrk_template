@@ -3,14 +3,14 @@ namespace BERGWERK\BwrkTemplate\UserFuncs;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class Tca {
+class Tca
+{
 
     public function columnConfiguration($PA, $fObj)
     {
-        $templatePath = GeneralUtility::getFileAbsFileName('EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/FlexForm/'.$PA['parameters']['type'].'.html');
+        $templatePath = GeneralUtility::getFileAbsFileName('EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/FlexForm/' . $PA['parameters']['type'] . '.html');
 
-        if(file_exists($templatePath))
-        {
+        if (file_exists($templatePath)) {
             return file_get_contents($templatePath);
         }
     }

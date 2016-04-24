@@ -1,28 +1,28 @@
 {namespace vh=In2code\Powermail\ViewHelpers}
 
 <div id="fieldwrap_{field.uid}" class="fieldwrap_{field.uid} {field.css} form-group">
-    <div class="col-sm-2">
-        <label class="control-label">
-            <vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss>
-            <f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
-        </label>
-    </div>
-    <div class="col-sm-10">
-        <f:for each="{field.modifiedSettings}" as="setting" iteration="index">
-            <div class="radio">
-                <label>
-                    <f:form.radio
-                            property="{field.marker}"
-                            value="{setting.value}"
-                            checked="{vh:Misc.PrefillField(field:field, mail:mail, cycle:index.cycle)}"
-                            id="field_{field.marker}_{index.cycle}"
-                            additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field, iteration:index)}"
+	<div class="col-sm-2">
+		<label class="control-label">
+			<vh:string.RawAndRemoveXss>{field.title}</vh:string.RawAndRemoveXss>
+			<f:if condition="{field.mandatory}"><span class="mandatory">*</span></f:if>
+		</label>
+	</div>
+	<div class="col-sm-10">
+		<f:for each="{field.modifiedSettings}" as="setting" iteration="index">
+			<div class="radio">
+				<label>
+					<f:form.radio
+						property="{field.marker}"
+						value="{setting.value}"
+						checked="{vh:Misc.PrefillField(field:field, mail:mail, cycle:index.cycle)}"
+						id="field_{field.marker}_{index.cycle}"
+						additionalAttributes="{vh:Validation.ValidationDataAttribute(field:field, iteration:index)}"
 
-                    <vh:string.RawAndRemoveXss>{setting.label}</vh:string.RawAndRemoveXss>
-                </label>
-            </div>
-        </f:for>
+					<vh:string.RawAndRemoveXss>{setting.label}</vh:string.RawAndRemoveXss>
+				</label>
+			</div>
+		</f:for>
 
-        <div class="field_error_container field_error_container_{field.marker}"></div>
-    </div>
+		<div class="field_error_container field_error_container_{field.marker}"></div>
+	</div>
 </div>

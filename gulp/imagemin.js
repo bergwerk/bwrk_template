@@ -5,7 +5,7 @@ var pngquant = require('imagemin-pngquant');
 gulp.task('img', imageTask);
 
 function imageTask() {
-	var compileImages = function(destPath) {
+	var compileImages = function (destPath) {
 		gulp.src(sourcePath + 'assets/img/*')
 			.pipe(imagemin({
 				progressive: true,

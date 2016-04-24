@@ -9,38 +9,38 @@ Render Powermail Form
 
 <f:section name="main">
 
-    <f:flashMessages class="alert alert-danger"/>
+	<f:flashMessages class="alert alert-danger"/>
 
-    <f:if condition="{forms}">
-        <f:then>
-            <f:for each="{forms}" as="form">
-                <f:form
-                        action="{action}"
-                        name="field"
-                        enctype="multipart/form-data"
-                        additionalAttributes="{vh:Validation.EnableParsleyAndAjax(form:form)}"
-                        class="powermail_form {form.css} {vh:Misc.MorestepClass(activate:settings.main.moresteps, class:'powermail_morestep')}{bwrk:forms()}">
+	<f:if condition="{forms}">
+		<f:then>
+			<f:for each="{forms}" as="form">
+				<f:form
+					action="{action}"
+					name="field"
+					enctype="multipart/form-data"
+					additionalAttributes="{vh:Validation.EnableParsleyAndAjax(form:form)}"
+					class="powermail_form {form.css} {vh:Misc.MorestepClass(activate:settings.main.moresteps, class:'powermail_morestep')}{bwrk:forms()}">
 
-                    <f:render partial="Misc/FormError" arguments="{_all}"/>
+					<f:render partial="Misc/FormError" arguments="{_all}"/>
 
-                    <f:for each="{form.pages}" as="page">
+					<f:for each="{form.pages}" as="page">
 
 
-                        <f:for each="{page.fields}" as="field">
-                            <f:render partial="Form/{vh:String.Upper(string:field.type)}"
-                                      arguments="{field:field}"/>
-                        </f:for>
+						<f:for each="{page.fields}" as="field">
+							<f:render partial="Form/{vh:String.Upper(string:field.type)}"
+												arguments="{field:field}"/>
+						</f:for>
 
-                    </f:for>
+					</f:for>
 
-                    <f:form.hidden name="mail[form]" value="{form.uid}"/>
-                    <f:render partial="Misc/HoneyPod" arguments="{form:form}"/>
-                </f:form>
-            </f:for>
-        </f:then>
-        <f:else>
-            <f:translate key="error_no_form"/>
-        </f:else>
-    </f:if>
+					<f:form.hidden name="mail[form]" value="{form.uid}"/>
+					<f:render partial="Misc/HoneyPod" arguments="{form:form}"/>
+				</f:form>
+			</f:for>
+		</f:then>
+		<f:else>
+			<f:translate key="error_no_form"/>
+		</f:else>
+	</f:if>
 
 </f:section>

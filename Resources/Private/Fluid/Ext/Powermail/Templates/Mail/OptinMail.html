@@ -6,19 +6,19 @@ This Mail is send back to the user with an Optin Link that has to be clicked
 Mail will only be send, if Optin was enabled by editor
 
 <f:section name="main">
-    <f:translate key="optin_mail_link"/>
-    <br>
+	<f:translate key="optin_mail_link"/>
+	<br>
 
-    <f:link.action action="optinConfirm" absolute="1" arguments="{hash: hash, mail: mail}">
-        <f:uri.action action="optinConfirm" absolute="1" arguments="{hash: hash, mail: mail}"/>
-    </f:link.action>
+	<f:link.action action="optinConfirm" absolute="1" arguments="{hash: hash, mail: mail}">
+		<f:uri.action action="optinConfirm" absolute="1" arguments="{hash: hash, mail: mail}"/>
+	</f:link.action>
 
-    <br><br>
-    <hr>
-    <f:translate key="optin_mail_entries"/>
-    <br>
+	<br><br>
+	<hr>
+	<f:translate key="optin_mail_entries"/>
+	<br>
 
-    <vh:string.RawAndRemoveXss>
-        {powermail_all}
-    </vh:string.RawAndRemoveXss>
+	<vh:string.RawAndRemoveXss>
+		{powermail_all}
+	</vh:string.RawAndRemoveXss>
 </f:section>

@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3DataStructure>
-	<meta type="array">
-		<langDisable>1</langDisable>
-	</meta>
-	<sheets>
-		<general>
-			<ROOT type="array">
-				<TCEforms>
-					<sheetTitle>Allgemein</sheetTitle>
-				</TCEforms>
-				<el type="array">
-					<column_configuration type="array">
-						<TCEforms type="array">
-							<label>Konfiguration</label>
-							<config type="array">
-								<type>select</type>
-								<items type="array">
-									<numIndex index="0" type="array">
-										<numIndex index="0">--- Bitte auswählen ---</numIndex>
-										<numIndex index="1"></numIndex>
-									</numIndex>
-									<numIndex index="1" type="array">
-										<numIndex index="0">Konfiguration 1</numIndex>
-										<numIndex index="1">1</numIndex>
-									</numIndex>
-								</items>
-								<default>1</default>
-							</config>
-						</TCEforms>
-					</column_configuration>
+    <meta type="array">
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <general>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Allgemein</sheetTitle>
+                </TCEforms>
+                <el type="array">
+                    <column_configuration type="array">
+                        <TCEforms type="array">
+                            <label>Konfiguration</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">--- Bitte auswählen ---</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Konfiguration 1</numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </column_configuration>
 
-					<column_configuration_text>
-						<TCEforms>
-							<label>Beschreibung</label>
-							<config>
-								<type>user</type>
-								<size>30</size>
-								<userFunc>BERGWERK\BwrkTemplate\UserFuncs\Tca->columnConfiguration</userFunc>
-								<parameters>
-									<type>3Columns</type>
-								</parameters>
-							</config>
-						</TCEforms>
-					</column_configuration_text>
-				</el>
-			</ROOT>
-		</general>
-		<specify>
-			<ROOT type="array">
-				<TCEforms>
-					<sheetTitle>Spezielle CSS Klassen</sheetTitle>
-				</TCEforms>
-				<el type="array">
-					<css_class_col1 type="array">
-						<TCEforms type="array">
-							<label>Spalte 1:</label>
-							<config type="array">
-								<type>input</type>
-								<size>48</size>
-								<eval>trim</eval>
-							</config>
-						</TCEforms>
-					</css_class_col1>
+                    <column_configuration_text>
+                        <TCEforms>
+                            <label>Beschreibung</label>
+                            <config>
+                                <type>user</type>
+                                <size>30</size>
+                                <userFunc>BERGWERK\BwrkTemplate\UserFuncs\Tca->columnConfiguration</userFunc>
+                                <parameters>
+                                    <type>3Columns</type>
+                                </parameters>
+                            </config>
+                        </TCEforms>
+                    </column_configuration_text>
+                </el>
+            </ROOT>
+        </general>
+        <specify>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>Spezielle CSS Klassen</sheetTitle>
+                </TCEforms>
+                <el type="array">
+                    <css_class_col1 type="array">
+                        <TCEforms type="array">
+                            <label>Spalte 1:</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>48</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </css_class_col1>
 
-					<css_class_col2 type="array">
-						<TCEforms type="array">
-							<label>Spalte 2:</label>
-							<config type="array">
-								<type>input</type>
-								<size>48</size>
-								<eval>trim</eval>
-							</config>
-						</TCEforms>
-					</css_class_col2>
+                    <css_class_col2 type="array">
+                        <TCEforms type="array">
+                            <label>Spalte 2:</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>48</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </css_class_col2>
 
-					<css_class_col3 type="array">
-						<TCEforms type="array">
-							<label>Spalte 3:</label>
-							<config type="array">
-								<type>input</type>
-								<size>48</size>
-								<eval>trim</eval>
-							</config>
-						</TCEforms>
-					</css_class_col3>
-				</el>
-			</ROOT>
-		</specify>
-	</sheets>
+                    <css_class_col3 type="array">
+                        <TCEforms type="array">
+                            <label>Spalte 3:</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>48</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </css_class_col3>
+                </el>
+            </ROOT>
+        </specify>
+    </sheets>
 </T3DataStructure>

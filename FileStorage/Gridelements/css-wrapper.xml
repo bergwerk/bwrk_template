@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <T3DataStructure>
-	<ROOT type="array">
-		<type>array</type>
-		<el type="array">
-			<css_class type="array">
-				<TCEforms type="array">
-					<config type="array">
-						<type>input</type>
-						<size>48</size>
-						<eval>trim</eval>
-					</config>
-					<label>CSS class</label>
-				</TCEforms>
-			</css_class></el>
-	</ROOT>
+    <ROOT type="array">
+        <type>array</type>
+        <el type="array">
+            <css_class type="array">
+                <TCEforms type="array">
+                    <config type="array">
+                        <type>input</type>
+                        <size>48</size>
+                        <eval>trim</eval>
+                    </config>
+                    <label>CSS class</label>
+                </TCEforms>
+            </css_class>
+        </el>
+    </ROOT>
 </T3DataStructure>

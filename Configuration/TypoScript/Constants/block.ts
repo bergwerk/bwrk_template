@@ -1,15 +1,15 @@
 ### Configuration for the Block Elements (headerlogo, headerlinks, footer)
 
 lib {
-   # Set Headerlogo
-   headerlogo =
+  # Set Headerlogo
+  headerlogo =
 
-   # Set Headerlinks
-   headerlinks =
+  # Set Headerlinks
+  headerlinks =
 
-   # Set Footer
-   footer =
+  # Set Footer
+  footer =
 
-   # Search Page Id
-   searchPageId = 80
+  # Search Page Id
+  searchPageId = 80
 }

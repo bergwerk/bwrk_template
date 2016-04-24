@@ -19,7 +19,7 @@
 		<div class="tabs-content">
 			<f:for each="{field.contents}" as="content" iteration="iterator">
 				<div class="content {f:if(condition:'{iterator.isFirst}', then:'active')}"
-				     id="tab{iterator.index}">
+						 id="tab{iterator.index}">
 
 					<f:for each="{content.records -> dce:explode(delimiter:',')}" as="recordUid">
 

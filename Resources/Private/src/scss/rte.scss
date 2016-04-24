@@ -5,9 +5,9 @@
 @include foundation-typography-helpers();
 
 a.button {
-  @include button();
+	@include button();
 }
 
 p.lead {
-  @extend .lead;
+	@extend .lead;
 }

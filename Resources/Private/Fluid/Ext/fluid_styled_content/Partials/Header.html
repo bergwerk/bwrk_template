@@ -18,16 +18,16 @@
 			header: data.header,
 			layout: data.header_layout,
 			link: data.header_link,
-			default: settings.defaultHeaderType}" />
+			default: settings.defaultHeaderType}"/>
 
 		<f:if condition="{data.subheader}">
 			<f:render partial="Header/SubHeader" arguments="{
 				subheader: data.subheader,
 				layout: data.header_layout,
-				default: settings.defaultHeaderType}" />
+				default: settings.defaultHeaderType}"/>
 		</f:if>
 
-		<f:render partial="Header/Date" arguments="{_all}" />
+		<f:render partial="Header/Date" arguments="{_all}"/>
 
 		<f:if condition="{data.subheader}">
 			<f:then>

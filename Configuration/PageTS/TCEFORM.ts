@@ -1,108 +1,107 @@
 TCEFORM {
-    pages {
-        layout {
-            disabled = 1
-        }
-
-        alias {
-            disabled = 1
-        }
+  pages {
+    layout {
+      disabled = 1
     }
 
-    tt_content {
-        header_layout {
-            altLabels {
-                0 = Standard (H3)
-                1 = H1 (nur 1x pro Seite!)
-                2 = H2 (nur 1x pro Seite!)
-                3 = H3 (Standard)
-                4 = H4
-                5 = H5
-            }
-        }
-
-        layout {
-            removeItems = 1,2,3
-            disableNoMatchingValueElement = 1
-            types {
-                bullets {
-                    removeItems = 0,1,2,3
-                    addItems {
-
-                    }
-                }
-
-                table {
-                    removeItems = 0,1,2,3
-                    addItems {
-
-                    }
-                }
-
-                uploads {
-                    removeItems = 3
-                    addItems {
-
-                    }
-                }
-            }
-        }
-
-        imagecols {
-            removeItems = 5,6,7,8
-        }
-
-        imageorient {
-            removeItems = 1,2,9,10
-        }
-
-        section_frame {
-            removeItems = 1
-            addItems {
-
-            }
-
-            disableNoMatchingValueElement = 1
-        }
-
-        table_bgColor.disabled = 1
-        table_border.disabled = 1
-        table_cellspacing.disabled = 1
-        table_cellpadding.disabled = 1
-        pi_flexform {
-            table {
-                sDEF {
-                    acctables_nostyles.disabled = 1
-                    acctables_tableclass.disabled = 1
-                }
-            }
-        }
-
-        # General
-        rte_enabled.disabled = 1
-
-        # Appearance
-        section_frame.disabled = 1
-        spaceAfter.disabled = 1
-        spaceBefore.disabled = 1
-        layout.disabled = 1
-        imageborder.disabled = 1
-        image_effects.disabled = 1
-        image_compression.disabled = 1
-        imagecols = 1
-        imagecols.disabled = 0
-        image_noRows.disabled = 1
-        imagecaption_position.disabled = 1
-
-        # Access
-        header_position.disabled = 1
-        linkToTop.disabled = 1
+    alias {
+      disabled = 1
     }
+  }
+
+  tt_content {
+    header_layout {
+      altLabels {
+        0 = Standard (H3)
+        1 = H1 (nur 1x pro Seite!)
+        2 = H2 (nur 1x pro Seite!)
+        3 = H3 (Standard)
+        4 = H4
+        5 = H5
+      }
+    }
+
+    layout {
+      removeItems = 1,2,3
+      disableNoMatchingValueElement = 1
+      types {
+        bullets {
+          removeItems = 0,1,2,3
+          addItems {
+
+          }
+        }
+
+        table {
+          removeItems = 0,1,2,3
+          addItems {
+
+          }
+        }
+
+        uploads {
+          removeItems = 3
+          addItems {
+
+          }
+        }
+      }
+    }
+
+    imagecols {
+      removeItems = 5,6,7,8
+    }
+
+    imageorient {
+      removeItems = 1,2,9,10
+    }
+
+    section_frame {
+      removeItems = 1
+      addItems {
+
+      }
+
+      disableNoMatchingValueElement = 1
+    }
+
+    table_bgColor.disabled = 1
+    table_border.disabled = 1
+    table_cellspacing.disabled = 1
+    table_cellpadding.disabled = 1
+    pi_flexform {
+      table {
+        sDEF {
+          acctables_nostyles.disabled = 1
+          acctables_tableclass.disabled = 1
+        }
+      }
+    }
+
+    # General
+    rte_enabled.disabled = 1
+
+    # Appearance
+    section_frame.disabled = 1
+    spaceAfter.disabled = 1
+    spaceBefore.disabled = 1
+    layout.disabled = 1
+    imageborder.disabled = 1
+    image_effects.disabled = 1
+    image_compression.disabled = 1
+    imagecols = 1
+    imagecols.disabled = 0
+    image_noRows.disabled = 1
+    imagecaption_position.disabled = 1
+
+    # Access
+    header_position.disabled = 1
+    linkToTop.disabled = 1
+  }
 }
-
 
 # Bezeichnung und Symbol fuer Standardsprache
 mod.SHARED {
-    defaultLanguageFlag = de
-    defaultLanguagelabel = deutsch
+  defaultLanguageFlag = de
+  defaultLanguagelabel = deutsch
 }

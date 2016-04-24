@@ -1,1 +1,13 @@
-{"version":3,"sources":["general.js"],"names":[],"mappings":"AAAA;AACA","file":"app.js","sourceRoot":"/source/","sourcesContent":["// Example JS File"]}
+{
+  "version": 3,
+  "sources": [
+	"general.js"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA",
+  "file": "app.js",
+  "sourceRoot": "/source/",
+  "sourcesContent": [
+	"// Example JS File"
+  ]
+}
