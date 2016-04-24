@@ -6,7 +6,7 @@ var path = require('path');
 gulp.task('icons', iconsTask);
 
 function iconsTask() {
-	gulp.src([sourcePath + 'assets/svg/use/*.svg'])
+	gulp.src([sourcePath + 'assets/svg/*.svg'])
 		.pipe(iconfont({
 			fontName: 'icon',
 			appendCodepoints: true,

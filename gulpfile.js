@@ -5,7 +5,7 @@ require('require-dir')('gulp');
 // for frontend development use frontend
 // for typo3 use typo
 
-var environment = 'typo3';
+var environment = 'frontend';
 
 switch (environment) {
 	case 'frontend':
@@ -31,16 +31,13 @@ var config = [
 	jsFilesApp = [
 
 		// Jquery
-		//sourcePath + 'bower_components/jquery/dist/jquery.min.js',
+		sourcePath + 'bower_components/jquery/dist/jquery.min.js',
 
 		// Fastclick
-		//sourcePath + 'bower_components/fastclick/lib/fastclick.js',
+		sourcePath + 'bower_components/fastclick/lib/fastclick.js',
 
 		// Picturefill
 		//sourcePath + 'bower_components/picturefill/dist/picturefill.js',
-
-		// SSM
-		//sourcePath + 'bower_components/SimpleStateManager/src/ssm.js',
 
 		// Slick
 		//sourcePath + 'bower_components/slick-carousel/slick/slick.min.js',
@@ -49,10 +46,10 @@ var config = [
 		//sourcePath + 'bower_components/single-page-nav/jquery.singlePageNav.js',
 
 		// Foundation
-		//sourcePath + 'bower_components/foundation-sites/js/foundation.core.js',
+		sourcePath + 'bower_components/foundation-sites/js/foundation.core.js',
 		//sourcePath + 'bower_components/foundation-sites/js/foundation.util.box.js',
 		//sourcePath + 'bower_components/foundation-sites/js/foundation.util.keyboard.js',
-		//sourcePath + 'bower_components/foundation-sites/js/foundation.util.mediaQuery.js',
+		sourcePath + 'bower_components/foundation-sites/js/foundation.util.mediaQuery.js',
 		//sourcePath + 'bower_components/foundation-sites/js/foundation.util.motion.js',
 		//sourcePath + 'bower_components/foundation-sites/js/foundation.util.nest.js',
 		//sourcePath + 'bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js',
