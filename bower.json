@@ -1,8 +1,8 @@
 {
-  "name": "src-kit",
-  "description": "src-kit is a frontend devkit",
+  "name": "bwrk_template",
+  "description": "basic TYPO3 Template",
   "authors": [
-    "Marvin Huebner"
+    "Marvin Hübner <mjh@bergwerk.ag>"
   ],
   "license": "MIT",
   "private": true,
@@ -12,7 +12,7 @@
     "scss",
     "js"
   ],
-  "homepage": "https://github.com/marvinhuebner/src-kit",
+  "homepage": "https://git.bergwerk.ag/typo3-extensions/bwrk_template",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -22,6 +22,8 @@
     "tests"
   ],
   "devDependencies": {
-    "foundation-sites": "latest"
+    "foundation-sites": "^6.2.0",
+    "fastclick": "^1.0.6",
+    "icon-collection": "https://git.bergwerk.ag/bergwerk/icon-collection.git#master"
   }
 }
