@@ -6,5 +6,5 @@ gulp.task('watch', watchTask);
 function watchTask() {
 	gulp.watch(sourcePath + 'scss/**/*.scss', ['styles']);
 	gulp.watch(jsFilesApp, ['scripts']);
-	gulp.watch(sourcePath + 'html/**/*.jade', ['jade']);
+	//gulp.watch(sourcePath + 'html/**/*.jade', ['jade']);
 }
