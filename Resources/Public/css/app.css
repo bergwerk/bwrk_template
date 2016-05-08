@@ -422,7 +422,7 @@ body {
 	font-weight: normal;
 	line-height: 1.5;
 	color: #0a0a0a;
-	background: #fefefe;
+	background: #ffffff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -5089,10 +5089,6 @@ body ::selection {
 body ::-moz-selection {
 	background: black;
 	color: white;
-}
-
-body {
-	background-color: grey;
 }
 
 /*# sourceMappingURL=app.css.map */

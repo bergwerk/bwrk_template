@@ -1,6 +1,5 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Helper" extensions="ts">
 
-### Setup Files
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Config.ts">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page.ts">
@@ -10,4 +9,5 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Lib" extensions="ts">
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Setup" extensions="ts">
+
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Constants" extensions="ts">
