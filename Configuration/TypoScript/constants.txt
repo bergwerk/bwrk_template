@@ -1,6 +1,3 @@
-### Dependencies
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
-
 ### CONFIG
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Constants/config.ts">
 
@@ -14,10 +11,3 @@
 
 ### CSS STYLED CONTENT
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Constants/styles.ts">
-
-### EXTENSION
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Gridelements/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Indexedsearch/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/News/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/nn_address/constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Powermail/constants.ts">
