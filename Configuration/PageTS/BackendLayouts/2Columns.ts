@@ -12,12 +12,12 @@ mod {
                 columns {
                   1 {
                     name = Inhalt
-                    colPos = 1
+                    colPos = 0
                   }
 
                   2 {
                     name = Inhalt
-                    colPos = 2
+                    colPos = 1
                   }
                 }
               }
