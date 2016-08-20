@@ -1,14 +1,35 @@
-################
-#### HELPER ####
-################
+##
+# Include external extension typoscript before own typoscript files
+##
+
+# Fluid Styled Content
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/setup.txt">
+
+
+##
+# Include all typoscript Helper
+##
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Helper" extensions="ts">
 
+##
+# Include all typoscript setup files (Fluid templates, Backend Layouts)
+##
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Setup" extensions="ts">
 
+##
+# Include typoscript all lib files
+##
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Lib" extensions="ts">
 
+##
+# Include all external typoscript for extensions
+##
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Setup" extensions="ts">
 
+
+##
+# Include all constants for external extension
+##
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Constants" extensions="ts">
 
 

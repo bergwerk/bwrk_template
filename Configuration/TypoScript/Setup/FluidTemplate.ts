@@ -5,7 +5,6 @@ page {
       file = EXT:bwrk_template/Resources/Private/Fluid/Templates/Header/Icons.html
       templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Templates/Header/
     }
-
     15 >
     15 = COA
     15 {
