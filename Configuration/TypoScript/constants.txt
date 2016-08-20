@@ -1,12 +1,22 @@
-##
-# Include external extension typoscript constants before own constants
-##
+########################################################################################################################
+### Include external extension typoscript constants before own constants
 
-# Fluid Styled Content
+# SYSEXT:fluid_styled_content
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/constants.txt">
 
+# EXT:gridelements
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
 
-##
+########################################################################################################################
+
+
+
+########################################################################################################################
+### start bwrk_template typoscript
+
+###
 # Include default
-##
+###
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Constants" extensions="ts">
+
+########################################################################################################################
