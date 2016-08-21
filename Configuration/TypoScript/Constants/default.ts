@@ -22,6 +22,11 @@ config {
 }
 
 page {
+  logo {
+    # cat=template: specific/130/100; type= string; label=Path to Logo
+    file = EXT:bwrk_template/Resources/Public/img/logo.png
+  }
+
   fluidtemplate {
     # cat=template: advanced/100/100; type=string; label=Layout Root Path: Path to layouts
     layoutRootPath = EXT:bwrk_template/Resources/Private/Layouts/Page/

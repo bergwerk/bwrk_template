@@ -44,7 +44,14 @@ page {
     templateRootPath = EXT:bwrk_template/Resources/Private/Fluid/Fluid/Templates/Page/
     partialRootPath = EXT:bwrk_template/Resources/Private/Fluid/Partials/Page/
     layoutRootPath = EXT:bwrk_template/Resources/Private/Fluid/Layouts/Page/
+
+    settings {
+      logo {
+        file = {$page.logo.file}
+      }
+    }
   }
+
 
   footerData {
     10 = FLUIDTEMPLATE
