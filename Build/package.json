@@ -1,0 +1,15 @@
+{
+  "name": "src-kit",
+  "description": "src-kit",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.bergwerk.ag/bergwerk/src-kit"
+  },
+  "author": {
+    "name": "Marvin Hübner <mjh@bergwerk.ag>"
+  },
+  "devDependencies": {
+    "gulp-handyman": "git+https://github.com/marvinhuebner/gulp-handyman.git#0.1.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "src-kit",
+  "description": "src-kit is a frontend devkit",
+  "authors": [
+    "Marvin Huebner"
+  ],
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "frontend",
+    "devkit",
+    "scss",
+    "js"
+  ],
+  "homepage": "https://git.bergwerk.ag/bergwerk/src-kit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "6.2.3",
+    "fastclick": "^1.0.6",
+    "icon-collection": "https://git.bergwerk.ag/frameworks-libarys/icon-collection.git#master"
+  }
+}
