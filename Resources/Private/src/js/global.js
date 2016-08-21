@@ -1,20 +1,18 @@
-'use strict';
-
 $(document).ready(function () {
 	/**
-  * Call Foundation JS
-  */
+	 * Call Foundation JS
+	 */
 	$(document).foundation();
 
 	/**
-  * Call Fastclick JS
-  */
+	 * Call Fastclick JS
+	 */
 	FastClick.attach(document.body);
 
 	/**
-  * Get the MediaQueries which are used in foundation
-  * @type {string} get current MediaQuery
-  */
+	 * Get the MediaQueries which are used in foundation
+	 * @type {string} get current MediaQuery
+	 */
 
 	var currentBreakpoint = Foundation.MediaQuery.current;
 
@@ -38,4 +36,3 @@ $(document).ready(function () {
 		// your code
 	}
 });
-//# sourceMappingURL=app.js.map
