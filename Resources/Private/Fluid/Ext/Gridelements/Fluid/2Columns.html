@@ -1,11 +1,13 @@
 <f:switch expression="{data.flexform_column_configuration}">
 	<f:case value="1">
-		<div class="medium-6 column">
-			<f:format.raw>{data.tx_gridelements_view_column_11}</f:format.raw>
-		</div>
+		<div class="row{f:if(condition:'{data.flexform_css_class_row}',then:' {data.flexform_css_class_row}')}">
+			<div class="column medium-6{f:if(condition:'{data.flexform_css_class_col1}',then:' {data.flexform_css_class_col1}')}">
+				<f:format.raw>{data.tx_gridelements_view_column_11}</f:format.raw>
+			</div>
 
-		<div class="medium-6 column">
-			<f:format.raw>{data.tx_gridelements_view_column_12}</f:format.raw>
+			<div class="column medium-6{f:if(condition:'{data.flexform_css_class_col1}',then:' {data.flexform_css_class_col2}')}">
+				<f:format.raw>{data.tx_gridelements_view_column_12}</f:format.raw>
+			</div>
 		</div>
 	</f:case>
 </f:switch>

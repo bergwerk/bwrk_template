@@ -1,29 +1,54 @@
-### Dependencies
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.ts">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Extensions/Setup/Gridelements.ts">
 
-### CONFIG
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/config.ts">
 
-### LIBARY
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Menu/main/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Menu/mobile/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Menu/sub/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Breadcrumb/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Block/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Languageswitcher/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Library/Searchbox/setup.ts">
+########################################################################################################################
+### Include external extension setup.txt before own typoscript
 
-### PAGE
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/page/fluidStyledContents.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/headerData.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/fluidTemplate.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Setup/Page/footerData.ts">
+# SYSEXT:fluid_styled_content
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/setup.txt">
 
-### EXTENSION
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/fluid_styled_content/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Gridelements/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Indexedsearch/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/News/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/nn_address/setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/TypoScript/Ext/Powermail/setup.ts">
+# EXT:gridelements
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.ts">
+
+########################################################################################################################
+
+
+
+########################################################################################################################
+### start bwrk_template typoscript
+
+###
+# Include all typoscript Helper
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Helper" extensions="ts">
+
+###
+# Include all typoscript setup files (Fluid templates, Backend Layouts)
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Setup" extensions="ts">
+
+###
+# Include typoscript all lib files
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Lib" extensions="ts">
+
+###
+# Include all external typoscript for extensions
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Setup" extensions="ts">
+
+###
+# Include all constants for external extension
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Constants" extensions="ts">
+
+########################################################################################################################
+
+########################################################################################################################
+### Include external extension setup.txt after own typoscript
+
+# EXT:Mask
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mask/Configuration/TypoScript/setup.txt">
+
+########################################################################################################################
+

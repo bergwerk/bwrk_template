@@ -12,19 +12,18 @@ mod {
                 columns {
                   1 {
                     name = Inhalt
-                    colPos = 1
+                    colPos = 0
                   }
 
                   2 {
                     name = Inhalt
-                    colPos = 2
+                    colPos = 1
                   }
                 }
               }
             }
           }
         }
-
         icon = EXT:bwrk_template/Resources/Public/icons/backendlayouts/2Columns.gif
       }
     }

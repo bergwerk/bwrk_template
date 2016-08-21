@@ -7,9 +7,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/TCEFORM.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/TCEMAIN.ts">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/gridelements.ts">
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/PageTS/Gridelements" extensions="ts">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/PageTS/BackendLayouts" extensions="ts">
-
-

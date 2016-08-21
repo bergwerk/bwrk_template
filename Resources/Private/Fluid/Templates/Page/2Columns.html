@@ -2,15 +2,21 @@
 
 <f:section name="standard">
 	<div class="row">
-		<div class="columns small-6">
-			<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 1}"/>
-		</div>
-		<div class="columns small-6">
-			<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 2}"/>
-
-		</div>
+		<f:alias map="{daten: '{pageUid: data.uid, colPos: 0}'}">
+			<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+				<div class="column small-6">
+					<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0}"/>
+				</div>
+			</f:if>
+		</f:alias>
+		<f:alias map="{daten: '{pageUid: data.uid, colPos: 1}'}">
+			<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+				<div class="column small-6">
+					<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 1}"/>
+				</div>
+			</f:if>
+		</f:alias>
 	</div>
 </f:section>
-
 
 
