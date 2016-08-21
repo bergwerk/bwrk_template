@@ -110,3 +110,35 @@ Generates all favicons from a 1000x1000 pixel large PNG. Place your `favicon.png
 The `CoolUriConf.xml` is located in the `Configuration` folder. 
 
 Go to the extension options in the extension manager and add by **XML path** path the following string: `typo3conf/ext/bwrk_template/Configuration/`. Now CoolUri should work.
+
+### Mask
+
+The necessary folder structure for Mask Fluid templating is already prepared in `Resources/Private/Fluid/Ext/Mask`. The file for the general mask configuration should be located in the `Configuration` folder.
+
+Go to the extension options in the extension manager and adjust several paths:
+
+#### 1. General
+
+**File with project-specific mask configuration**: `typo3conf/ext/bwrk_template/Configuration/mask.json`
+
+#### 2. Frontend
+
+**Folder for Content Fluid Templates (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Frontend/`
+
+**Folder for Content Fluid Layouts (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Frontend/Layouts/`
+
+**Folder for Content Fluid Partials (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Frontend/Partials/`
+
+#### 3. Backend
+**Folder for Backend Preview Templates (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Backend/`
+
+**Folder for Backend Preview Layouts (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Backend/Layouts/`
+
+**Folder for Backend Preview Partials (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Backend/Partials/`
+
+**Folder for preview-images (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Backend/preview/`
+
+
+
+
+
