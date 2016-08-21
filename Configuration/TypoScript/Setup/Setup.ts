@@ -84,7 +84,8 @@ file2.media = print
 }
 
 includeJSFooterlibs {
-file1 = EXT:bwrk_template/Resources/Public/js/app.js
+file1 = EXT:bwrk_template/Resources/Public/js/appLibs.js
+file2 = EXT:bwrk_template/Resources/Public/js/app.js
 }
 
 jsFooterInline {
