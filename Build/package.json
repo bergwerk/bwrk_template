@@ -1,13 +1,15 @@
 {
-  "name": "src-kit",
-  "description": "src-kit",
+  "name": "bwrk_template",
+  "description": "basic typo3 template",
+  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://git.bergwerk.ag/bergwerk/src-kit"
+    "url": "https://git.bergwerk.ag/typo3-extensions/bwrk_template"
   },
   "author": {
-    "name": "Marvin Hübner <mjh@bergwerk.ag>"
+    "name": "Marvin Hübner",
+    "email": "mjh@bergwerk.ag"
   },
   "devDependencies": {
     "gulp-handyman": "git+https://github.com/marvinhuebner/gulp-handyman.git#0.1.0"

@@ -1,6 +1,6 @@
 {
-  "name": "src-kit",
-  "description": "src-kit is a frontend devkit",
+  "name": "bwrk_template",
+  "description": "basic typo3 template",
   "authors": [
     "Marvin Huebner"
   ],
@@ -12,7 +12,7 @@
     "scss",
     "js"
   ],
-  "homepage": "https://git.bergwerk.ag/bergwerk/src-kit",
+  "homepage": "https://git.bergwerk.ag/typo3-extensions/bwrk_template",
   "ignore": [
     "**/.*",
     "node_modules",
