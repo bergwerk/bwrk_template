@@ -97,7 +97,7 @@ File: phone.svg
 }
 ```
 
-#### 4. `$gulp favicon`
+#### 4. `$ gulp favicon`
 
 Generates all favicons from a 1000x1000 pixel large PNG. Place your `favicon.png` in `Resources/Private/src/assets/favicon` and start the gulp task.
 
