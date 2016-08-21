@@ -1,7 +1,7 @@
 const path = {
-	toSrc: '../src/',
-	toDist: '../public/',
-	toBower: '../src/bower_components/'
+	toSrc: '../Resources/Private/src/',
+	toDist: '../Resources/Public/',
+	toBower: '../Resources/Private/src/bower_components/'
 };
 
 module.exports.path = path;
