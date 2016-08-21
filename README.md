@@ -111,6 +111,8 @@ The `CoolUriConf.xml` is located in the `Configuration` folder.
 
 Go to the extension options in the extension manager and add by **XML path** path the following string: `typo3conf/ext/bwrk_template/Configuration/`. Now CoolUri should work.
 
+---
+
 ### Mask
 
 The necessary folder structure for Mask Fluid templating is already prepared in `Resources/Private/Fluid/Ext/Mask`. The file for the general mask configuration should be located in the `Configuration` folder.
@@ -138,6 +140,26 @@ Go to the extension options in the extension manager and adjust several paths:
 
 **Folder for preview-images (with trailing slash)**: `typo3conf/ext/bwrk_template/Resources/Private/Fluid/Ext/Mask/Backend/preview/`
 
+---
+
+### Gridelements
+
+There are four basic gridelements preconfigured.
+
+- 2 Columns
+- 3 Columns
+- 4 Columns
+- CSS Wrapper
+
+Gridelements are configured in `Configuration/PageTS/Gridelements`. 
+
+The fluid template paths are set in `Configuration/TypoScript/Extensions/Setup/Gridelements.ts`.
+
+If you want to a new configuration option for a gridelement type, you need to add a new option in `Configuration/FlexForm/Gridelements` Flexform. After you added th new option you need to adjust to fluid template and add a new case.
+
+The Fluid templates are located in `Resources/Private/Fluid/Ext/Gridelements/Fluid`.
+
+To give the editor a good experience there is a visual guide in the backend for the configuration options. Please adjust or add the new options to the visual guides, which are located in `Resources/Private/Fluid/Ext/Gridelements/Flexform`.
 
 
 
