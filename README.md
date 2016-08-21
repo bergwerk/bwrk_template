@@ -12,6 +12,8 @@ This extension is prepared to use it out of the box with the following extension
 - Mask - 2.1.0 (mask)
 - Gridelements - 7.0.5 (gridelements)
 
+---
+
 ## Quick Guide
 
 ### 1. TypoScript
@@ -99,4 +101,12 @@ File: phone.svg
 
 Generates all favicons from a 1000x1000 pixel large PNG. Place your `favicon.png` in `Resources/Private/src/assets/favicon` and start the gulp task.
 
+---
 
+## Extension Guide
+
+### CoolUri
+
+The `CoolUriConf.xml` is located in the `Configuration` folder. 
+
+Go to the extension options in the extension manager and add by **XML path** path the following string: `typo3conf/ext/bwrk_template/Configuration/`. Now CoolUri should work.
