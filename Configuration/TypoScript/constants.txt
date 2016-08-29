@@ -7,6 +7,9 @@
 # EXT:gridelements
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
 
+# EXT:NEWS
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
+
 ########################################################################################################################
 
 
@@ -18,5 +21,10 @@
 # Include default
 ###
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Constants" extensions="ts">
+
+###
+# Include all constants for external extension
+###
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Constants" extensions="ts">
 
 ########################################################################################################################
