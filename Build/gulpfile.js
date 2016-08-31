@@ -23,7 +23,9 @@ ghandyman.checkEqualVersion({
 	module: 'gulp-handyman'
 });
 
-gulp.task('default', ['scss', 'js', 'pug', 'watch', 'browser-sync']);
+gulp.task('default', ['scss', 'js', 'watch']);
+
+gulp.task('frontend', ['scss', 'js', 'watch:frontend', 'browser-sync']);
 
 gulp.task('build', ['scss', 'js', 'pug', 'js:libs', 'favicon', 'iconfont']);
 
@@ -95,12 +97,18 @@ gulp.task('scss', function () {
 gulp.task('watch', function () {
 	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
 	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
+});
+
+gulp.task('watch:frontend', function () {
+	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
+	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
 	gulp.watch(path.toSrc + 'pug/**/*.pug', ['pug']);
 
 	gulp.watch([
 		path.toDist + '**/*.css',
 		path.toDist + '**/*.js',
-		path.toDist + '**/*.html'
+		path.toDist + '**/*.html',
+		'../Resources/Private/Fluid/**/*.html'
 	]).on('change', browserSync.reload)
 });
 

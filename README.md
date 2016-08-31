@@ -67,7 +67,7 @@ The `scss` tasks will compile the `app.scss` file to `app.css`.
 
 The `js` taks will compile all files which are in `Resources/Private/src/js`. If you want to have control over the order you must include every file particular in `gulp.config.js` in the `files.jsFilesOwn` array.
 
-#### 2. `$ gulp js:Libs`
+#### 2. `$ gulp js:libs`
 
 This gulp task will compile all JS libarys in one file. If you want to add a libary you must adjust the `gulp.config.js` file. 
 There are several arrays (`files.jsFilesLibUtility`, `files.jsFilesLibBabel`, `files.jsFilesLibNormal`) in which you must add the path to the libary.
@@ -76,6 +76,17 @@ The files will merged in the following order:
 1. `files.jsFilesLibUtility` (Includes the basic utlitliy. For example jQuery)
 2. `files.jsFilesLibBabel` (Librarys which need babel compiler)
 3. `files.jsFilesLibNormal` (Normal librarys)
+
+#### 1. `$ gulp:frontend`
+
+This gulp task is equal to the default task, but it starts the browser-sync task and has the possibility to compile pug files if it is needed.
+
+- scss
+- js
+- watch
+- browser-sync
+- pug
+
 
 #### 3. `$ gulp iconfont`
 
