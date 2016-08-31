@@ -23,8 +23,8 @@ tt_content.gridelements_pi1.20.10.setup {
     }
   }
 
-  5Columns < lib.gridelements.defaultGridSetup
-  5Columns {
+  CssWrapper < lib.gridelements.defaultGridSetup
+  CssWrapper {
     cObject = FLUIDTEMPLATE
     cObject {
       file = EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Fluid/CssWrapper.html

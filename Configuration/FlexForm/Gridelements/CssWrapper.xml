@@ -37,7 +37,7 @@
                                 <size>30</size>
                                 <userFunc>BERGWERK\BwrkTemplate\UserFuncs\Tca->columnConfiguration</userFunc>
                                 <parameters>
-                                    <type>CSS-Wrapper</type>
+                                    <type>CssWrapper</type>
                                 </parameters>
                             </config>
                         </TCEforms>
