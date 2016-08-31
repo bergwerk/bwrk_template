@@ -8,4 +8,4 @@ node_modules
 bower_components
 
 Build/temp
-Build/gulp.localhost.js
+Build/gulp.localconf.js
