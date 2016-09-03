@@ -90,17 +90,41 @@ gulp.task('scss', function () {
 	return ghandyman.gulpSass({
 		pathToSrc: path.toSrc + 'scss/app.scss',
 		pathToDest: path.toDist + 'css',
-		fileName: 'app'
+		fileName: 'app',
+		minify: config.minify
+	});
+});
+
+gulp.task('scss:print', function () {
+	return ghandyman.gulpSass({
+		pathToSrc: path.toSrc + 'scss/print.scss',
+		pathToDest: path.toDist + 'css',
+		fileName: 'print',
+		minify: config.minify
+	});
+});
+
+
+gulp.task('scss:rte', function () {
+	return ghandyman.gulpSass({
+		pathToSrc: path.toSrc + 'scss/rte.scss',
+		pathToDest: path.toDist + 'css',
+		fileName: 'rte',
+		minify: false
 	});
 });
 
 gulp.task('watch', function () {
 	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
+	gulp.watch(path.toSrc + 'scss/rte.scss', ['scss:rte']);
+	gulp.watch(path.toSrc + 'scss/print.scss', ['scss:print']);
 	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
 });
 
 gulp.task('watch:frontend', function () {
 	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
+	gulp.watch(path.toSrc + 'scss/rte.scss', ['scss:rte']);
+	gulp.watch(path.toSrc + 'scss/print.scss', ['scss:print']);
 	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
 	gulp.watch(path.toSrc + 'pug/**/*.pug', ['pug']);
 
@@ -143,4 +167,3 @@ gulp.task('favicon', function(){
 		pathToDest: path.toDist + 'assets/favicon'
 	})
 });
-
