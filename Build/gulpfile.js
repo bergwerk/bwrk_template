@@ -9,11 +9,6 @@ const merge = require('merge-stream');
 const importPaths = require('./gulp.paths.js');
 const importConfig = require('./gulp.config.js');
 
-try {
-	const localconf = require('./gulp.localconf.js');
-} catch (err) {
-}
-
 const config = importConfig.config;
 const files = importConfig.files;
 const path = importPaths.path;
@@ -90,60 +85,33 @@ gulp.task('scss', function () {
 	return ghandyman.gulpSass({
 		pathToSrc: path.toSrc + 'scss/app.scss',
 		pathToDest: path.toDist + 'css',
-		fileName: 'app',
-		minify: config.minify
-	});
-});
-
-gulp.task('scss:print', function () {
-	return ghandyman.gulpSass({
-		pathToSrc: path.toSrc + 'scss/print.scss',
-		pathToDest: path.toDist + 'css',
-		fileName: 'print',
-		minify: config.minify
-	});
-});
-
-
-gulp.task('scss:rte', function () {
-	return ghandyman.gulpSass({
-		pathToSrc: path.toSrc + 'scss/rte.scss',
-		pathToDest: path.toDist + 'css',
-		fileName: 'rte',
-		minify: false
+		fileName: 'app'
 	});
 });
 
 gulp.task('watch', function () {
 	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
-	gulp.watch(path.toSrc + 'scss/rte.scss', ['scss:rte']);
-	gulp.watch(path.toSrc + 'scss/print.scss', ['scss:print']);
-	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
-});
-
-gulp.task('watch:frontend', function () {
-	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
-	gulp.watch(path.toSrc + 'scss/rte.scss', ['scss:rte']);
-	gulp.watch(path.toSrc + 'scss/print.scss', ['scss:print']);
 	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
 	gulp.watch(path.toSrc + 'pug/**/*.pug', ['pug']);
 
 	gulp.watch([
 		path.toDist + '**/*.css',
 		path.toDist + '**/*.js',
-		path.toDist + '**/*.html',
-		'../Resources/Private/Fluid/**/*.html'
+		path.toDist + '**/*.html'
 	]).on('change', browserSync.reload)
 });
 
 gulp.task('browser-sync', function () {
 	var browserSyncConfig;
 
-	if (localconf) {
+	try {
+		const localconf = require('./gulp.localconf.js');
+
 		browserSyncConfig = {
 			proxy: localconf.localhost
 		}
-	} else {
+
+	} catch (err) {
 		browserSyncConfig = {
 			server: path.toDist
 		}
@@ -167,3 +135,4 @@ gulp.task('favicon', function(){
 		pathToDest: path.toDist + 'assets/favicon'
 	})
 });
+
