@@ -137,7 +137,7 @@ gulp.task('browser-sync', function () {
 		const localconf = require('./gulp.localconf.js');
 
 		browserSyncConfig = {
-			proxy: localconf.localhost
+			proxy: localconf.localconf.localhost
 		}
 
 	} catch (err) {

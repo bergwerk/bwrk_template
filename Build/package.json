@@ -11,6 +11,9 @@
     "name": "Marvin Hübner",
     "email": "mjh@bergwerk.ag"
   },
+  "engines": {
+    "node": ">=5.2.0"
+  },
   "devDependencies": {
     "gulp-handyman": "git+https://github.com/marvinhuebner/gulp-handyman.git#0.1.2"
   }
