@@ -61,7 +61,7 @@ The default **gulp** command bundles all default tasks:
 - js
 - watch
 - browser-sync
-- pug (you can remove this then there is no pug needed)
+- pug 
 
 The `scss` tasks will compile the `app.scss` file to `app.css`.
 
@@ -85,7 +85,7 @@ This gulp task is equal to the default task, but it starts the browser-sync task
 - js
 - watch
 - browser-sync
-- pug
+- pug (this functions is uncommented per default, if you need pug you need to comment it in)
 
 
 #### 3. `$ gulp iconfont`
