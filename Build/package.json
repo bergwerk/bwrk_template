@@ -12,6 +12,6 @@
     "email": "mjh@bergwerk.ag"
   },
   "devDependencies": {
-    "gulp-handyman": "git+https://github.com/marvinhuebner/gulp-handyman.git#0.1.0"
+    "gulp-handyman": "git+https://github.com/marvinhuebner/gulp-handyman.git#0.1.2"
   }
 }

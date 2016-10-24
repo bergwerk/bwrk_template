@@ -89,10 +89,38 @@ gulp.task('scss', function () {
 	});
 });
 
-gulp.task('watch', function () {
+gulp.task('scss:rte', function () {
+	return ghandyman.gulpSass({
+		pathToSrc: path.toSrc + 'scss/rte.scss',
+		pathToDest: path.toDist + 'css',
+		fileName: 'rte'
+	});
+});
+
+gulp.task('scss:print', function () {
+	return ghandyman.gulpSass({
+		pathToSrc: path.toSrc + 'scss/print.scss',
+		pathToDest: path.toDist + 'css',
+		fileName: 'print'
+	});
+});
+
+function watchTask() {
 	gulp.watch(path.toSrc + 'scss/**/*.scss', ['scss']);
+	gulp.watch(path.toSrc + 'scss/**/rte.scss', ['scss:rte']);
+	gulp.watch(path.toSrc + 'scss/**/print.scss', ['scss:print']);
 	gulp.watch(path.toSrc + 'js/**/*.js', ['js']);
-	gulp.watch(path.toSrc + 'pug/**/*.pug', ['pug']);
+}
+
+
+gulp.task('watch', function () {
+	watchTask();
+});
+
+gulp.task('watch:frontend', function () {
+	watchTask();
+
+	//gulp.watch(path.toSrc + 'pug/**/*.pug', ['pug']);
 
 	gulp.watch([
 		path.toDist + '**/*.css',
@@ -100,6 +128,7 @@ gulp.task('watch', function () {
 		path.toDist + '**/*.html'
 	]).on('change', browserSync.reload)
 });
+
 
 gulp.task('browser-sync', function () {
 	var browserSyncConfig;
