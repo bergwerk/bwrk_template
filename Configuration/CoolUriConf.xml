@@ -66,9 +66,9 @@
 
     <uriparts>
         <part>
-            <parameter>tx_ttnews[tt_news]</parameter>
-            <lookindb>
-                <to>SELECT title FROM tt_news WHERE uid=$1</to>
+            <parameter>tx_news_pi1[news]</parameter>
+		      <lookindb>
+		        <to>SELECT title FROM tx_news_domain_model_news WHERE uid=$1</to>
                 <!-- if you have news items in different languages in one folder, use this sql -->
                 <!-- to>SELECT title FROM tt_news WHERE (uid=$1 or l18n_parent=$1) AND sys_language_uid={L=0}</to -->
                 <t3conv>1</t3conv>
@@ -114,6 +114,9 @@
         <part>
             <parameter>cHash</parameter>
         </part>
+        <part key="(.*)" regexp="1">
+	        <parameter>tx_news_pi1[@widget_0][currentPage]</parameter>
+	    </part>
         <part>
             <parameter>tx_news_pi1[controller]</parameter>
         </part>
