@@ -1,15 +1,30 @@
 {
-  "name": "BERGWERK/bwrk_template",
+  "name": "vendor/bwrk_template",
   "description": "TYPO3-Template Extension",
+  "homepage": "www.bergwerk.ag",
+  "authors": [
+    {
+      "name": "Marvin Hübner",
+      "email": "typo3@bergwerk.ag"
+    },
+    {
+      "name": "Georg Dümmler",
+      "email": "typo3@bergwerk.ag"
+    }
+  ],
   "type": "typo3-cms-extension",
   "version": "4.0.0",
   "license": ["GPL-2.0+"],
   "require": {
     "typo3/cms-core": ">7.6"
   },
+  "replace": {
+    "bwrk_template": "self.version",
+    "typo3-ter/bwrk_template": "self.version"
+  },
   "autoload": {
     "psr-4": {
-      "BERGWERK\\BwrkTemplate\\": "web/typo3conf/ext/bwrk_template/Classes"
+      "BERGWERK\\BwrkTemplate\\": "Classes/"
     }
   }
 }
