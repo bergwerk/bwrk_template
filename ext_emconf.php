@@ -3,7 +3,7 @@ $EM_CONF[$_EXTKEY] = array(
     'title' => 'BERGWERK Template',
     'description' => '',
     'category' => 'templates',
-    'version' => '3.0.0',
+    'version' => '4.0.0',
     'state' => 'stable',
     'clearcacheonload' => 1,
     'author' => 'BERGWERK',
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
         ),
         'conflicts' => array(),
         'suggests' => array(
-            'fluid_styled_content' => '7.6.0-7.6.99'
+            'fluid_styled_content' => '7.6.0-8.7.99'
         )
     )
 );

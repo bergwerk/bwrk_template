@@ -1,0 +1,17 @@
+{
+  "name": "BERGWERK/bwrk_template",
+  "description": "TYPO3-Template Extension",
+  "type": "typo3-cms-extension",
+  "version": "4.0.0",
+  "replace": {
+    "bwrk_template": "self.version"
+  },
+  "require": {
+    "typo3/cms-core": "^7.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "BERGWERK\\BwrkTemplate\\": "Classes/"
+    }
+  }
+}
