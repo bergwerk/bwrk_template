@@ -3,15 +3,13 @@
   "description": "TYPO3-Template Extension",
   "type": "typo3-cms-extension",
   "version": "4.0.0",
-  "replace": {
-    "bwrk_template": "self.version"
-  },
+  "license": ["GPL-2.0+"],
   "require": {
-    "typo3/cms-core": "^7.6"
+    "typo3/cms-core": ">7.6"
   },
   "autoload": {
     "psr-4": {
-      "BERGWERK\\BwrkTemplate\\": "Classes/"
+      "BERGWERK\\BwrkTemplate\\": "web/typo3conf/ext/bwrk_template/Classes"
     }
   }
 }
