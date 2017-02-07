@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "BERGWERK\\BwrkTemplate\\": "Classes/"
+      "BERGWERK\\BwrkTemplate\\": "Classes"
     }
-  }
+  },
 }
