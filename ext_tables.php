@@ -14,4 +14,4 @@ if (!defined('TYPO3_MODE')) {
 );
 
 $TBE_STYLES['skins'][$_EXTKEY]['name'] = $_EXTKEY;
-$TBE_STYLES['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:' . $_EXTKEY . '/Resources/Public/css/backend/';
+$TBE_STYLES['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:' . $_EXTKEY . '/Resources/Public/Css/Backend/';

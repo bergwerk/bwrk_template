@@ -2,13 +2,16 @@
 ### Include external extension typoscript constants before own constants
 
 # SYSEXT:fluid_styled_content
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
 
 # EXT:gridelements
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
 
 # EXT:NEWS
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
+
+# EXT:tt_address
+# <INCLUDE_TYPOSCRIPT: source="FILE:EXT:tt_address/static/pi1/constants.txt">
 
 ########################################################################################################################
 
@@ -20,11 +23,11 @@
 ###
 # Include default
 ###
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Constants" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Constants" extensions="typoscript">
 
 ###
 # Include all constants for external extension
 ###
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Constants" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/TypoScript/Extensions/Constants" extensions="typoscript">
 
 ########################################################################################################################

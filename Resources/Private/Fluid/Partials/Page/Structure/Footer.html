@@ -1,0 +1,39 @@
+<footer class="footer">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<f:alias map="{daten: '{pageUid: settings.specialElements.pageUid, colPos: 10}'}">
+				<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+					<div class="cell medium-6 large-3">
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.specialElements.pageUid}', colPos: '10'}"/>
+					</div>
+				</f:if>
+			</f:alias>
+
+			<f:alias map="{daten: '{pageUid: settings.specialElements.pageUid, colPos: 11}'}">
+				<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+					<div class="cell medium-6 large-3">
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.specialElements.pageUid}', colPos: '11'}"/>
+					</div>
+				</f:if>
+			</f:alias>
+
+			<f:alias map="{daten: '{pageUid: settings.specialElements.pageUid, colPos: 12}'}">
+				<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+					<div class="cell medium-6 large-3">
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.specialElements.pageUid}', colPos: '12'}"/>
+					</div>
+				</f:if>
+			</f:alias>
+
+			<f:alias map="{daten: '{pageUid: settings.specialElements.pageUid, colPos: 13}'}">
+				<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+					<div class="cell medium-6 large-3">
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.specialElements.pageUid}', colPos: '13'}"/>
+					</div>
+				</f:if>
+			</f:alias>
+		</div>
+	</div>
+</footer>
+
+

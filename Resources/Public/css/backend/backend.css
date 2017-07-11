@@ -1,3 +1,9 @@
+/* This file contains some basic styling for displaying the gridelements config in the backend.
+ * The file is not generated with SCSS or something. Just simple plain CSS.
+ *
+ * @see EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Flexform/2Columns.html
+ */
+
 .xy-center {
 	position: absolute;
 	top: 50%;

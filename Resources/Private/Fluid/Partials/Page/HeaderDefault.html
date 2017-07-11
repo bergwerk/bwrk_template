@@ -1,0 +1,18 @@
+<div class="grid-container">
+	<div class="grid-x grid-padding-x">
+		<div class="cell medium-3">
+			<f:if condition="{settings.logo.file}">
+				<f:link.page pageUid="{settings.logo.link}" class="logo">
+					<img src="{f:uri.image(src: settings.logo.file)}" alt="{logoAlt}" height="{settings.logo.height}"
+							 width="{settings.logo.width}">
+				</f:link.page>
+			</f:if>
+		</div>
+
+		<div class="cell medium-9">
+			<nav class="mein-menu">
+				<f:cObject typoscriptObjectPath="lib.menuMain"/>
+			</nav>
+		</div>
+	</div>
+</div>

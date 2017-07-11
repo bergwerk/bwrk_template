@@ -1,13 +1,12 @@
-<div class="page">
-	<header class="page__head">
-		<f:render partial="header_default"/>
-	</header>
+<header class="header">
+	<f:render partial="HeaderDefault"/>
+</header>
 
-	<div class="page__content">
-		<f:render section="standard"/>
-	</div>
+<main class="main">
+	<f:render section="standard"/>
+</main>
 
-	<footer class="page__footer">
-		<f:cObject typoscriptObjectPath="lib.footer"/>
-	</footer>
-</div>
+<footer class="footer">
+	<f:render partial="Structure/Footer"/>
+</footer>
+

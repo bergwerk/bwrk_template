@@ -1,0 +1,7 @@
+plugin.tx_ttaddress_pi1 {
+  # Change template path for overwriting the template
+  templatePath = EXT:bwrk_template/Resources/Private/Fluid/Ext/tt_address/
+
+  # Rename default template if necessary
+  defaultTemplateFileName = default.htm
+}

@@ -1,0 +1,19 @@
+plugin {
+  tx_form {
+    settings {
+      yamlConfigurations {
+        100 = EXT:bwrk_template/Configuration/Yaml/Form/Configuration/Form.yaml
+      }
+    }
+  }
+}
+
+module {
+  tx_form {
+    settings {
+      yamlConfigurations {
+        100 =  EXT:bwrk_template/Configuration/Yaml/Form/Configuration/Form.yaml
+      }
+    }
+  }
+}

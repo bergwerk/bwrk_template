@@ -1,0 +1,33 @@
+mod {
+  web_layout {
+    BackendLayouts {
+      default_two_columns {
+        title = Standard, Zweispaltig
+        config {
+          backend_layout {
+            colCount = 4
+            rowCount = 1
+            rows {
+              1 {
+                columns {
+                  1 {
+                    name = Inhalt
+                    colPos = 0
+                    colspan = 2
+                  }
+
+                  2 {
+                    name = Inhalt
+                    colPos = 1
+                    colspan = 2
+                  }
+                }
+              }
+            }
+          }
+        }
+        icon = EXT:bwrk_template/Resources/Public/Icons/Backend/BackendLayouts/2Columns.gif
+      }
+    }
+  }
+}

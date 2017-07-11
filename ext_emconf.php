@@ -1,9 +1,9 @@
 <?php
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'BERGWERK Template',
-    'description' => '',
+    'description' => 'Standard Template für TYPO3 Websites',
     'category' => 'templates',
-    'version' => '4.0.0',
+    'version' => '1.0.0',
     'state' => 'stable',
     'clearcacheonload' => 1,
     'author' => 'BERGWERK',
@@ -11,11 +11,7 @@ $EM_CONF[$_EXTKEY] = array(
     'author_company' => 'BERGWERK',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '7.6.0-7.6.99'
-        ),
-        'conflicts' => array(),
-        'suggests' => array(
-            'fluid_styled_content' => '7.6.0-8.7.99'
+            'typo3' => '8.7.0-8.7.99'
         )
     )
 );

@@ -1,13 +1,15 @@
 <f:layout name="Default"/>
 
 <f:section name="standard">
-	<div class="row">
-		<f:alias map="{daten: '{pageUid: data.uid, colPos: 0}'}">
-			<f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
-				<div class="column">
-					<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0}"/>
-				</div>
-			</f:if>
-		</f:alias>
-	</div>
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <f:alias map="{daten: '{pageUid: data.uid, colPos: 0}'}">
+        <f:if condition="{daten -> f:cObject(typoscriptObjectPath:'lib.dynamicContent')}">
+          <div class="cell">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0}"/>
+          </div>
+        </f:if>
+      </f:alias>
+    </div>
+  </div>
 </f:section>

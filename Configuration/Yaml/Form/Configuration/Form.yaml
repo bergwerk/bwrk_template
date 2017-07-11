@@ -1,0 +1,53 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedFileMounts:
+          10: 1:/forms/
+#        allowedExtensionPaths:
+#          10: EXT:bwrk_template/Configuration/Yaml/Form/Forms/
+#        allowSaveToExtensionPaths: true
+#        allowDeleteFromExtensionPaths: true
+
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  100: 'EXT:bwrk_template/Resources/Private/Fluid/Ext/form/Templates/'
+                partialRootPaths:
+                  100: 'EXT:bwrk_template/Resources/Private/Fluid/Ext/form/Partials/'
+                layoutRootPaths:
+                  100: 'EXT:bwrk_template/Resources/Private/Fluid/Ext/form/Layouts/'
+
+            GridContainer:
+              properties:
+                elementClassAttribute: 'container'
+                # overrules 'GridRow.properties.gridColumnClassAutoConfiguration'
+                gridColumnClassAutoConfiguration:
+                  gridSize: 12
+                  viewPorts:
+                    xs:
+                      classPattern: 'cell small-{@numbersOfColumnsToUse}'
+                    sm:
+                      classPattern: 'medium-{@numbersOfColumnsToUse}'
+                    md:
+                      classPattern: 'large-{@numbersOfColumnsToUse}'
+                    lg:
+                      classPattern: 'xlarge-{@numbersOfColumnsToUse}'
+
+            GridRow:
+              properties:
+                elementClassAttribute: 'grid-x grid-padding-x'
+                gridColumnClassAutoConfiguration:
+                  gridSize: 12
+                  viewPorts:
+                    xs:
+                      classPattern: 'cell small-{@numbersOfColumnsToUse}'
+                    sm:
+                      classPattern: 'medium-{@numbersOfColumnsToUse}'
+                    md:
+                      classPattern: 'large-{@numbersOfColumnsToUse}'
+                    lg:
+                      classPattern: 'xlarge-{@numbersOfColumnsToUse}'
