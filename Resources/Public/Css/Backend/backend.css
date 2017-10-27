@@ -1,0 +1,56 @@
+/* This file contains some overwrites for the Backend CSS
+ *
+ * The file is not generated with SCSS or something. Just simple plain CSS.
+*/
+
+/* Overwrite some styles in the backend */
+
+/* Basic styling for displaying the gridelements config in the backend.
+ *
+ * @see EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Flexform/2Columns.html
+*/
+
+.xy-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.x-center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.y-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.bwrk-template-gridelements-description .gridelements-desc {
+    max-width: 700px;
+    margin-top: 15px;
+}
+
+.bwrk-template-gridelements-description .gridelements-desc__headline {
+    font-weight: bold;
+    margin-bottom: 7.5px;
+}
+
+.bwrk-template-gridelements-description .column-desc .row {
+    margin-bottom: 7.5px;
+}
+
+.bwrk-template-gridelements-description .column-desc div[class^="col-xs"] {
+    background-color: #8c8c8c;
+    border: 2px solid #f4f4f4;
+    height: 20px;
+}
