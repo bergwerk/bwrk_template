@@ -1,11 +1,6 @@
-# Ignore some Stuff
-
 .idea
 .idea/*
 .DS_Store
 .zip
 node_modules
 bower_components
-
-Build/temp
-Build/gulp.localconf.js

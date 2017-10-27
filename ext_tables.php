@@ -13,5 +13,8 @@ if (!defined('TYPO3_MODE')) {
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/PageTS/setup.txt">'
 );
 
-$TBE_STYLES['skins'][$_EXTKEY]['name'] = $_EXTKEY;
-$TBE_STYLES['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:' . $_EXTKEY . '/Resources/Public/css/backend/';
+$GLOBALS['TBE_STYLES']['skins'][$_EXTKEY] = array();
+$GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['name'] = 'BERGWERK Template Styles';
+$GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['stylesheetDirectories'] = array(
+    'structure' => 'EXT:' . $_EXTKEY . '/Resources/Public/Css/Backend/'
+);

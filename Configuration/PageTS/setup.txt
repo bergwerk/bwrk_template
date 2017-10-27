@@ -1,12 +1,7 @@
-### Enable the PageTS Setup by adding the following line to your config in the TYPO3 backend
-### or by uncommenting the include directive in ext_tables.php.
-### <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/admPanel.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/RTE.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/TCEFORM.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/TCEMAIN.typoscript">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/admPanel.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/RTE.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/TCEFORM.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bwrk_template/Configuration/PageTS/TCEMAIN.ts">
-
-
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/PageTS/Gridelements" extensions="ts">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/PageTS/BackendLayouts" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/PageTS/Gridelements" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bwrk_template/Configuration/PageTS/BackendLayouts" extensions="typoscript">

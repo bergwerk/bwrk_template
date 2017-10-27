@@ -1,0 +1,34 @@
+lib {
+  headerimages = COA
+  headerimages {
+    10 = IMAGE
+    10 {
+      file {
+        import.data = levelmedia:-1, slide
+        treatIdAsReference = 1
+        import.listNum = 0
+      }
+    }
+
+    20 < .10
+    20.file.import.listNum = 1
+
+    30 < .10
+    30.file.import.listNum = 2
+  }
+
+  pageTitle = TEXT
+  pageTitle.data = page:title
+
+  subTitle = TEXT
+  subTitle.data = page:subtitle
+
+  pageLevelTitle = TEXT
+  pageLevelTitle.data = leveltitle:1
+
+  siteTitle = TEXT
+  siteTitle.data = TSFE:tmpl|setup|sitetitle
+
+  rootPage = TEXT
+  rootPage.data = leveluid:0
+}
