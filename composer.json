@@ -5,12 +5,9 @@
 	"homepage": "www.bergwerk.ag",
 	"authors": [
 		{
-			"name": "Marvin Hübner",
-			"email": "typo3@bergwerk.ag"
-		},
-		{
-			"name": "Georg Dümmler",
-			"email": "typo3@bergwerk.ag"
+			"name": "BERGWERK",
+			"role": "Developer",
+			"homepage": "https://www.bergwerk.ag"
 		}
 	],
 	"version": "1.0.0",
