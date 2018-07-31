@@ -8,4 +8,4 @@ if (!defined('TYPO3_MODE')) {
 );
 
 // Add Custom Configuration for CKEeditor
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['bwrk_template'] = 'EXT:bwrk_template/Configuration/Yaml/RTE/RTE.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:bwrk_template/Configuration/Yaml/RTE/RTE.yaml';
