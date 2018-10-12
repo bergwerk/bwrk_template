@@ -15,11 +15,11 @@ TYPO3:
             Form:
               renderingOptions:
                 templateRootPaths:
-                  100: 'EXT:bwrk_template/Resources/Private/Fluid/Ext/form/Templates/'
+                  100: 'EXT:bwrk_template/Resources/Private/Ext/form/Templates/'
                 partialRootPaths:
-                  100: 'EXT:bwrk_template/Resources/Private/Fluid/Ext/form/Partials/'
+                  100: 'EXT:bwrk_template/Resources/Private/Ext/form/Partials/'
                 layoutRootPaths:
-                  100: 'EXT:bwrk_template/Resources/Private/Fluid/Ext/form/Layouts/'
+                  100: 'EXT:bwrk_template/Resources/Private/Ext/form/Layouts/'
 
             GridContainer:
               properties:

@@ -16,19 +16,4 @@ lib {
     30 < .10
     30.file.import.listNum = 2
   }
-
-  pageTitle = TEXT
-  pageTitle.data = page:title
-
-  subTitle = TEXT
-  subTitle.data = page:subtitle
-
-  pageLevelTitle = TEXT
-  pageLevelTitle.data = leveltitle:1
-
-  siteTitle = TEXT
-  siteTitle.data = TSFE:tmpl|setup|sitetitle
-
-  rootPage = TEXT
-  rootPage.data = leveluid:0
 }

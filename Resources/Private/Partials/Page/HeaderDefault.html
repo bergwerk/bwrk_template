@@ -12,8 +12,12 @@
 			</div>
 
 			<div class="cell medium-9">
-				<nav class="mein-menu">
-					<f:cObject typoscriptObjectPath="lib.menuMain"/>
+				<nav class="main-menu">
+					<f:render partial="Navigation/Main" arguments="{mainMenu: mainMenu}"/>
+				</nav>
+				
+				<nav class="language-menu">
+					<f:render partial="Navigation/Language" arguments="{languageMenu: languageMenu}"/>
 				</nav>
 			</div>
 		</div>

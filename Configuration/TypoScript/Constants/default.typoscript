@@ -67,13 +67,4 @@ page {
 lib {
   # Search Page Id
   searchPageId = 80
-
-  languageswitch {
-    showSwitcher = 0
-
-    defaultLanguage {
-      className = german
-      label = Deutsch
-    }
-  }
 }

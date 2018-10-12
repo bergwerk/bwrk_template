@@ -1,0 +1,23 @@
+<f:if condition="{mainMenu}">
+    <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+        <f:for each="{mainMenu}" as="mainItem">
+            <f:render partial="Navigation/Elements/Item" arguments="{item: mainItem}"/>
+            <f:if condition="{mainItem.children}">
+                <f:render section="submenu" arguments="{submenu: mainItem.children}"/>
+            </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:section name="submenu">
+    <ul class="vertical menu">
+        <f:for each="{submenu}" as="subItem">
+            <f:render partial="Navigation/Elements/Item" arguments="{item: subItem}"/>
+            <f:if condition="{subItem.children}">
+                <f:render section="submenu" arguments="{submenu: subItem.children}"/>
+            </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:section>

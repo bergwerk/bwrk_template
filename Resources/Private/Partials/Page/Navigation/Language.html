@@ -1,0 +1,28 @@
+<f:if condition="{languageMenu} && {f:count(subject: languageMenu) > 1}">
+    <ul id="language_menu" class="menu-language">
+        <f:for each="{languageMenu}" as="item">
+            <li class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'text-muted')}">
+                <f:switch expression="{item.languageId}">
+                    <f:case value="1">
+                        <f:variable name="languageTitle">En</f:variable>
+                        <f:variable name="hreflang">en-GB</f:variable>
+                    </f:case>
+                    <f:defaultCase>
+                        <f:variable name="languageTitle">De</f:variable>
+                        <f:variable name="hreflang">de-DE</f:variable>
+                    </f:defaultCase>
+                </f:switch>
+                <f:if condition="!{item.active} && {item.available}">
+                    <f:then>
+                        <a href="{item.link}" hreflang="{hreflang}" title="{languageTitle}">
+                            <span>{languageTitle}</span>
+                        </a>
+                    </f:then>
+                    <f:else>
+                        <span>{languageTitle}</span>
+                    </f:else>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

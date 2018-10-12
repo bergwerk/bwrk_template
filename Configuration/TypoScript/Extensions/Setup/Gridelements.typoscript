@@ -3,7 +3,7 @@ tt_content.gridelements_pi1.20.10.setup {
   2Columns {
     cObject = FLUIDTEMPLATE
     cObject {
-      file = EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Fluid/2Columns.html
+      file = EXT:bwrk_template/Resources/Private/Ext/Gridelements2Columns.html
     }
   }
 
@@ -11,7 +11,7 @@ tt_content.gridelements_pi1.20.10.setup {
   3Columns {
     cObject = FLUIDTEMPLATE
     cObject {
-      file = EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Fluid/3Columns.html
+      file = EXT:bwrk_template/Resources/Private/Ext/Gridelements3Columns.html
     }
   }
 
@@ -19,7 +19,7 @@ tt_content.gridelements_pi1.20.10.setup {
   4Columns {
     cObject = FLUIDTEMPLATE
     cObject {
-      file = EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Fluid/4Columns.html
+      file = EXT:bwrk_template/Resources/Private/Ext/Gridelements4Columns.html
     }
   }
 
@@ -27,7 +27,7 @@ tt_content.gridelements_pi1.20.10.setup {
   CssWrapper {
     cObject = FLUIDTEMPLATE
     cObject {
-      file = EXT:bwrk_template/Resources/Private/Fluid/Ext/Gridelements/Fluid/CssWrapper.html
+      file = EXT:bwrk_template/Resources/Private/Ext/GridelementsCssWrapper.html
     }
   }
 }
