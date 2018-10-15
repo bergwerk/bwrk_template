@@ -4,6 +4,9 @@
 # SYSEXT:fluid_styled_content
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.txt">
 
+# SYSEXT:seo
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:seo/Configuration/TypoScript/XmlSitemap/constants.typoscript">
+
 # EXT:gridelements
 # <INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/constants.ts">
 

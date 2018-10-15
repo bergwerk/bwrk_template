@@ -178,8 +178,7 @@ config {
     admPanel = {$config.admPanel}
     debug = 0
     intTarget =
-    extTarget =
-    noPageTitle = 0
+    extTarget = _blank
     contentObjectExceptionHandler = 0
 
     // Disable Image Upscaling

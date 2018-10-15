@@ -10,6 +10,9 @@
 # SYSEXT:forms
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:form/Configuration/TypoScript/setup.txt">
 
+# SYSEXT:seo
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript">
+
 # EXT:gridelements
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.ts">
 
