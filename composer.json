@@ -1,22 +1,23 @@
 {
-	"name": "bergwerk/bwrk-template",
-	"type": "typo3-cms-extension",
-	"description": "Standard Template für TYPO3 Websites",
-	"homepage": "www.bergwerk.ag",
-	"authors": [
-		{
-			"name": "BERGWERK",
-			"role": "Developer",
-			"homepage": "https://www.bergwerk.ag"
-		}
-	],
-	"version": "1.0.0",
-	"require": {
-		"typo3/cms": ">8.7"
-	},
-	"autoload": {
-		"psr-4": {
-			"BERGWERK\\BwrkTemplate\\": "Classes"
-		}
-	}
+  "name": "bergwerk/bwrk-template",
+  "type": "typo3-cms-extension",
+  "description": "Standard Template für TYPO3 Websites",
+  "homepage": "www.bergwerk.ag",
+  "authors": [
+    {
+      "name": "BERGWERK",
+      "role": "Developer",
+      "homepage": "https://www.bergwerk.ag"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms": ">8.7",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BERGWERK\\BwrkTemplate\\": "Classes"
+    }
+  }
 }

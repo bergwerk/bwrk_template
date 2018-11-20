@@ -9,3 +9,6 @@ if (!defined('TYPO3_MODE')) {
 
 // Add Custom Configuration for CKEeditor
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:bwrk_template/Configuration/Yaml/RTE/RTE.yaml';
+
+// Add eID for clearCache
+$GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['clearCache'] = \BERGWERK\BwrkTemplate\Controller\ClearCacheController::class . '::clearCacheAction';
