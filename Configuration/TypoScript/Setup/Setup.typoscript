@@ -169,7 +169,8 @@ config {
     no_cache = {$config.no_cache}
     uniqueLinkVars = 1
     pageTitleFirst = 0
-    pageTitleSeparator = &nbsp;&middot;&nbsp;
+    pageTitleSeparator = ·
+    pageTitleSeparator.noTrimWrap = | | |
     prefixLocalAnchors = {$config.prefixLocalAnchors}
     renderCharset = utf-8
     metaCharset = utf-8
